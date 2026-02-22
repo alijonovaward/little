@@ -1,0 +1,9 @@
+id,created,modified,main_type,name,image,desc,active,desc_en,desc_kr,desc_ru,desc_uz,name_en,name_kr,name_ru,name_uz
+2,2024-01-26 12:47:18.99426+00,2024-02-02 14:54:28.007927+00,p,samsung,category/samsung.jpg,"",t,"","","","",samsung,삼성,samsung,samsung
+1,2024-01-26 12:32:41.807123+00,2024-02-02 16:00:33.432225+00,f,meat,category/gosht_maxsulotlari.jpg,"",t,,,,,meat,육류 제품,Мясные продукты,Go'sht Maxsulotlari
+5,2024-01-31 15:01:55.590985+00,2024-02-02 16:15:25.483892+00,t,Uz Air Ways,category/uz_air_ways.jpg,"",t,"",,,,Uz Air Ways,우즈베키스탄항공,Uz Air Ways,O'zbekiston Havo Yo'llari
+14,2024-07-10 07:20:58.548195+00,2024-07-13 02:47:11.751251+00,f,Health products,category/1000000035_main_07.jpg,"",t,,,,,Health products,건강식품,Товары для здоровья,Sogliq uchun maxsulotlar
+3,2024-01-28 12:37:19.31379+00,2024-07-13 02:50:27.630287+00,f,Food products,category/IMG_20240713_115018_506.jpg,"",t,,,,,Food products,식료품,Продукты питания,Oziq-ovqat maxsulotlari
+16,2024-07-14 01:02:48.600752+00,2024-07-14 01:03:17.066616+00,f,Sausage products,category/IMG_20240714_095902_049.jpg,"",t,,,,,Sausage products,소시지 제품,Колбасный  изделия,Kolbasa va sosiskalar
+20,2025-10-25 07:58:06.691899+00,2025-10-25 07:59:49.249534+00,f,SMALL PERFUFES,category/photo_2025-10-25_16-55-33_AgoqDWO.jpg,"",t,,,,,SMALL PERFUFES,작은 향수,MALENKIYE DUXI,KICHK ATIRLAR
+21,2025-10-26 05:25:51.888152+00,2025-10-26 05:25:51.888152+00,f,FISH products,category/photo_2025-10-26_14-25-44.jpg,"",t,,,,,FISH products,생선,Ribniye produkti,Baliq mahsulotlari

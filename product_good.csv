@@ -1,0 +1,574 @@
+id,name,ingredients,expire_date,product_id,sub_cat_id,ingredients_en,ingredients_kr,ingredients_ru,ingredients_uz,name_en,name_kr,name_ru,name_uz
+744,QURITILGAN ANJIR 1KG,"",2026-10-15,758,33,,,,,QURITILGAN ANJIR 1KG,QURITILGAN ANJIR 1KG,SHOHONA GOVYAJYI TUSHONKA,SHOHONA MOL TUSHONKASI
+745,SHOHONA SPAGETTI,"",2027-01-01,759,33,,,,,SHOHONA SPAGETTI,SHOHONA SPAGETTI,SHOHONA SPAGETTI,SHOHONA SPAGETTI
+746,SHOHONA DIMLAMA,"",2026-09-09,760,33,,,,,SHOHONA DIMLAMA,SHOHONA DIMLAMA,SHOHONA DIMLAMA,SHOHONA DIMLAMA
+747,SHOHONA QO'Y TUSHONKASI,"",2026-08-07,761,33,,,,,SHOHONA QO'Y TUSHONKASI,SHOHONA QO'Y TUSHONKASI,SHOHONA BARANINA  TUSHONKASI,SHOHONA QO'Y TUSHONKASI
+555,LAYS ZELYONIY I LUK,"",2026-03-05,568,30,,,,,LAYS ZELYONIY I LUK,LAYS ZELYONIY I LUK,LAYS ZELYONIY I LUK,LAYS ZELYONIY I LUK
+6,Chicked legs,"",2028-05-05,12,6,,,,,Chicked legs,닭장각,Куриные ножки,Tovuq oyoqchalari
+1,Lamb front leg,"",2028-08-02,1,1,,,,,Lamb front leg,양앞다리,Баранья передняя нога,Qo'y oldi son
+10,Moxito,"",2028-02-12,16,7,,,,,Moxito,모히또,Мохито,Moxito qulpnay
+9,Samarkhand bread,"",2028-02-02,15,8,,,,,Samarkhand bread,사마르칸트 빵,Самаркандский хлеб,Samarqand non
+461,POTATO,"",2026-02-26,474,13,,,,,POTATO,0,KARTOSHKA,KARTOSHKA
+37,pistachios,"",2026-01-01,43,14,,,,,pistachios,피스타치오,фисташки,pista
+4,Mars chocolate 2x,"",2028-02-02,10,3,,,,,Mars chocolate 2x,Mars ( 말스) 초콜릿 2x,Mars шокалад 2x,Mars shokalad 2x
+439,Bone fracture,"",2026-07-17,452,2,,,,,Bone fracture,소뼈사태,PERELOM KOSTI 4KG,MOL MUSHAK 4KG
+29,Beef hind leg,"",2028-01-01,35,2,,,,,Beef hind leg,소뒷다리,задняя нога коровы,Mol orqa son
+32,Pickles,"",2028-01-01,38,13,,,,,Pickles,절인 것,Солёные огурцы,Tuzlangan bodring
+2,Lamb minced,"",2028-01-26,3,1,,,,,Lamb minced,다진 고기,Фарш Баранина,Qo'y Qiyma
+19,Royal food Klassicheskaya  1kg,"",2028-02-20,25,22,,,,,Royal food Klassicheskaya  1kg,Royal food Klassicheskaya 1 kg,Royal food Klassicheskaya 1kg,Royal food Klassicheskaya 1kg
+13,DENA CHERRY,"",2028-05-20,19,7,,,,,DENA CHERRY,DENA 데나  체리,ДЕН ВИШНЯ,DENA GILOSLI
+460,CARROT,"",2026-01-27,473,13,,,,,CARROT,탄근,MORKOV,SABZI
+462,ONION,"",2026-03-11,475,13,,,,,ONION,양빠,LUK,PIYOZ
+21,Snickers,"",2028-02-20,27,3,,,,,Snickers,Snickers,Snickers,Snickers
+552,LAYS SMETANA I LUK,"",2026-01-12,565,30,,,,,LAYS SMETANA I LUK,LAYS SMETANA I LUK,LAYS SMETANA I LUK,LAYS SMETANA I LUK
+35,Chicpeas,"",2026-01-01,41,18,,,,,Chicpeas,병아리콩,Горох,Xalqlar dostligi noxat
+42,“Царь“ Spaghetti,"",2028-01-01,48,16,,,,,“Царь“ Spaghetti,“Царь“ 스파게티,“Царь“ Спагетти,“Царь“ Spagetti 500gr
+11,Monster black,"",2028-02-02,17,7,,,,,Monster black,몬스터  검은,Монстер  черный,Monster  qora
+44,“Убелка”  Spaghetti,"",2028-01-01,50,16,,,,,“Убелка”  Spaghetti,“Убелка” 스파게티,“Убелка”  Спагетти,“Убелка” spagetti 500gr
+53,“MAKIZ”RAKUSHKA \ Pasta,"",2028-01-01,59,16,,,,,“MAKIZ”RAKUSHKA \ Pasta,“MAKIZ” RAKUSHKA 파스타,“MAKIZ” RAKUSHKA Макарон,“MAKIZ” RAKUSHKA Makaron 400gr
+7,Beef ribs,"",2027-05-06,13,2,,,,,Beef ribs,쇠고기 갈비,Говяжьи ребрышки,Mol quvurg'a
+557,LAYS SHASHLIK,"",2026-01-14,570,30,,,,,LAYS SHASHLIK,LAYS SHASHLIK,LAYS SHASHLIK,LAYS SHASHLIK
+38,pistachios,"",2028-01-01,44,14,,,,,pistachios,피스타치오,фисташки,"""SAFO"" pista"
+43,“Garofalo” Spaghetti,"",2028-01-01,49,16,,,,,“Garofalo” Spaghetti,“Garofalo”  스파게티,“Garofalo”  Спагетти,“Garofalo” spagetti 500gr
+18,Mars,"",2026-02-01,24,3,,,,,Mars,Mars,Mars,Mars
+48,“MAKIZ” Pasta 700G,"",2028-01-01,54,16,,,,,“MAKIZ” Pasta 700G,“MAKIZ” 파스타 700G,“MAKIZ” Макарон 700г,“MAKIZ” Makaron 700G
+47,“MAKFA” vitki  Pasta,"",2028-01-01,53,16,,,,,“MAKFA” vitki  Pasta,“MAKFA” vitki 파스타,“MAKFA” vitki Макарон,“MAKFA” Makaron  vitki 400gr
+49,“MAKIZ” Pasta,"",2028-01-01,55,16,,,,,“MAKIZ” Pasta,“MAKIZ” 파스타,“MAKIZ” Макарон,“MAKIZ” Makaron 400gr
+50,“MAKIZ ” PERYA  Pasta 400g,"",2028-01-01,56,16,,,,,“MAKIZ ” PERYA  Pasta 400g,“MAKIZ” PERYA 파스타 400g,“MAKIZ” PERYA Макарон 400г,“MAKIZ” PERYA Makaron 400g
+52,“MAKIZ” Pasta,"",2028-01-01,58,16,,,,,“MAKIZ” Pasta,“MAKIZ” 파스타,“MAKIZ” Макарон,“MAKIZ” Shilpildoq 500gr
+30,Beef front leg,"",2028-01-01,36,2,,,,,Beef front leg,소앞다리,Передняя нога коровы,Mol oldi son
+54,“MAKIZ”  Spring Pasta 700G,"",2028-01-01,60,16,,,,,“MAKIZ”  Spring Pasta 700G,“MAKIZ” 파스타 봄 700G,“MAKIZ” Пружина Макарон 700G,“MAKIZ” prujina makaron 700G
+17,Baunty,"",2026-02-20,23,3,,,,,Baunty,Baunty,Baunty,Baunty KATTA
+471,"","",2026-03-24,484,20,,,,,"","",SODA,KIR YUVISH SODASI
+46,“AGNESI” Spaghetti,"",2026-01-01,52,16,,,,,“AGNESI” Spaghetti,“AGNESI” 스파게티,“AGNESI” Спагетти,“AGNESI” Spagetti
+33,Pickled tomato,"",2026-01-01,39,13,,,,,Pickled tomato,절인 토마토,Маринованный помидор,KORETA Tuzlangan pomidor
+748,SHOHONA DO'LMA,"",2026-10-16,762,33,,,,,SHOHONA DO'LMA,SHOHONA DO'LMA,SHOHONA DO'LMA,SHOHONA DO'LMA
+559,"","",2026-02-20,572,27,,,,,"","",UVELKA MANNAYA KASHA,UVELKA MANNAYA KASHA
+560,"","",2026-02-12,573,27,,,,,"","",UVELKA OVSYANNAYA KASHA,UVELKA OVSYANNAYA KASHA
+28,Beef neck,"",2028-01-01,34,2,,,,,Beef neck,소목심,ГОВЯЖЬЯ ШЕЯ,Mol bo’yin
+82,Homemade kefir,"",2028-02-01,88,15,,,,,Homemade kefir,수제 케피어,Домашний кефир,Uy qatiqi 1L
+61,Makfa Nests,"",2028-01-01,67,16,,,,,Makfa Nests,파스타 알리오올리,Макфа Гнезда,Makfa uyalar
+440,0,"",2025-11-05,453,1,,,,,0,0,0,"Quy qovurg'a, umurtqa suyagi"
+86,“Millac” whipping,"",2028-02-23,97,15,,,,,“Millac” whipping,“Millac” 휘핑 크림,“Millac” Взбитые сливки,“Millac” Qaymoq
+66,‘Adjika’ pepper,"",2026-01-01,72,13,,,,,‘Adjika’ pepper,“아지카” 고추,Аджика,"""UZ KAND "" ‘Adjika’ qalampir"
+645,Zulya cucumber 2L,"",2026-07-01,659,13,,,,,Zulya cucumber 2L,Zulya ogursi 2L,Zulya ogursi 2L,Zulya bodring 2L
+468,Vinegar,"",2026-01-14,481,13,,,,,Vinegar,식초,Uksus,Sirka
+78,Svalya 200g,"",2026-01-01,84,15,,,,,Svalya 200g,Svalya 400g,Сваля 200г,Svalya 200g
+76,President,"",2026-01-01,82,15,,,,,President,President,Пресидент,President 200gr
+512,ORBIT,"",2026-02-11,525,30,,,,,ORBIT,ORBIT,ORBIT,ORBIT
+59,Smoked sprats,"",2028-01-01,65,35,,,,,Smoked sprats,훈제 어린애,копченые шпроты,Dudlangan shprot
+70,“BURCU” Pickles,"",2028-01-01,76,13,,,,,“BURCU” Pickles,“BURCU”절인 것,“BURCU” Солёные огурцы,“BURCU” Tuzlama bodring
+709,CURTIS DELICATE QORA 100 DONALIK,"",2026-05-13,723,17,,,,,CURTIS DELICATE QORA 100 DONALIK,CURTIS DELICATE QORA 100 DONALIK,CURTIS DELICATE QORA 100 DONALIK,CURTIS DELICATE QORA 100 DONALIK
+75,President butter 400g,"",2028-01-01,81,15,,,,,President butter 400g,President 400g,President 400g,President  400g
+62,Pickles,"",2026-01-01,68,13,,,,,Pickles,절인 것,Солёные огурцы,""" UZ KAND"" 2L Tuzlama bodring"
+710,CURTIS EARSL GRAY 100 DONALIK,"",2026-09-10,724,17,,,,,CURTIS EARSL GRAY 100 DONALIK,CURTIS EARSL GRAY 100 DONALIK,CURTIS EARSL GRAY 100 DONALIK,CURTIS EARSL GRAY 100 DONALIK
+74,Anchor,"",2026-01-01,80,15,,,,,Anchor,Anchor,Anchor,Anchor
+84,Kaimak,"",2028-03-23,90,15,,,,,Kaimak,카이막,Каймак,Kaimak
+711,VITAL GREEN TEA,"",2026-08-06,725,17,,,,,VITAL GREEN TEA,VㅑTAL 녹자,VITAL CHAY ZELYONIY,VITAL KOK CHOY
+712,JASMIN TEA,"",2026-05-07,726,17,,,,,JASMIN TEA,JASMIN 자,JASMIN CHAY,JASMIN CHOY
+713,TESS TEA WITH BERGAMOT 100PC,"",2026-10-03,727,17,,,,,TESS TEA WITH BERGAMOT 100PC,TESS BERGAMOTLI 100 DONA,TESS CHAY S BERGAMOTOM 100 SHTUKA,TESS BERGAMOTLI 100 DONA
+87,“UzKand” Strowberry,"",2028-05-23,98,29,,,,,“UzKand” Strowberry,“UzKand” 딸기,“UzKand” Клубника,“UzKand” Qulupnay
+95,“Greenfield” Black tea 25,"",2028-02-03,106,17,,,,,“Greenfield” Black tea 25,“Greenfield” 홍차 25,“Greenfield” Черный чай 25,“Greenfield” Qora choy 25
+714,95 TOZA ZELYONIY CHAY 400GR,"",2026-08-06,728,17,,,,,95 TOZA ZELYONIY CHAY 400GR,95 TOZA ZELYONIY CHAY 400GR,95 TOZA ZELYONIY CHAY 400GR,95 TOZA KOK CHOY 400GR
+715,95 ZELYONIY CHAY 225GR,"",2026-07-16,729,17,,,,,95 ZELYONIY CHAY 225GR,95 ZELYONIY CHAY 225GR,95 ZELYONIY CHAY 225GR,95 TOZA KOK CHOY 225GR
+716,110 TOZA KOK CHOY 225GR,"",2026-11-06,730,17,,,,,110 TOZA KOK CHOY 225GR,110 TOZA KOK CHOY 225GR,110 TOZA KOK CHOY 225GR,110 TOZA KOK CHOY 225GR
+96,“Greenfield” Black tea,"",2028-03-02,107,17,,,,,“Greenfield” Black tea,“Greenfield” 홍차,“Greenfield” Черный чай,“Greenfield” Qora choy
+60,Santa Bremor,"",2026-01-01,66,12,,,,,Santa Bremor,산타 브레모어,Cанта Бремор,Santa Bremor
+98,“RICHARD” Black tea 100,"",2028-03-02,109,17,,,,,“RICHARD” Black tea 100,“RICHARD” 홍차 100,“RICHARD” Черный чай 100,“RICHARD”  Qora choy 100
+717,ETRE CHOY 25DONALIK CHARBET,"",2026-06-04,731,17,,,,,ETRE CHOY 25DONALIK CHARBET,ETRE CHOY 25DONALIK CHARBET,ETRE CHOY 25DONALIK CHARBET,ETRE CHOY 25DONALIK CHARBET
+85,Whipping cream,"",2028-02-25,96,15,,,,,Whipping cream,휘핑 크림,Взбитые сливки,Qaymoq
+718,ETRE LIMON 25DONALIK,"",2026-07-31,732,17,,,,,ETRE LIMON 25DONALIK,ETRE LIMON 25DONALIK,ETRE LIMON 25DONALIK,ETRE LIMON 25DONALIK
+88,“UzKand” Malina,"",2028-05-23,99,29,,,,,“UzKand” Malina,“UzKand” 산딸기,“UzKand” Малина,“UzKand” Malina
+64,Аuberginen salad,"",2026-01-01,70,13,,,,,Аuberginen salad,가지 샐러드,салат из баклажанов,""" burcu"" Baqlajon salat"
+143,Dill,"",0001-01-01,154,19,,,,,Dill,딜,Укроп,“Dereotu” Ukrop
+80,MASLO,"",2026-01-01,86,15,,,,,MASLO,MASLO,Масло,MASLO
+513,ORBIT,"",,526,3,,,,,ORBIT,ORBIT,ORBIT,ORBIT
+562,KASHA KASHKA MINUTKA MALINA,"",2026-01-14,575,27,,,,,KASHA KASHKA MINUTKA MALINA,KASHA KASHKA MINUTKA MALINA,KASHA KASHKA MINUTKA MALINA,KASHA KASHKA MINUTKA MALINA
+563,KASHA KASHKA MINUTKA SMORODINA,"",2026-03-05,576,27,,,,,KASHA KASHKA MINUTKA SMORODINA,KASHA KASHKA MINUTKA SMORODINA,KASHA KASHKA MINUTKA SMORODINA,KASHA KASHKA MINUTKA SMORODINA
+564,KASHA KASHKA MINUTKA GILOS,"",2026-03-24,577,27,,,,,KASHA KASHKA MINUTKA GILOS,KASHA KASHKA MINUTKA GILOS,KASHA KASHKA MINUTKA GILOS,KASHA KASHKA MINUTKA GILOS
+130,“VITAL” Tea,"",2028-06-01,141,17,,,,,“VITAL” Tea,“VITAL” 차,“VITAL” Чай,“VITAL” choy
+719,ETRE CEYLON 100GR,"",2026-07-31,733,17,,,,,ETRE CEYLON 100GR,ETRE CEYLON 100GR,ETRE CEYLON 100GR,ETRE CEYLON 100GR
+106,“Bliss” strowberry,"",2028-03-02,117,7,,,,,“Bliss” strowberry,“Bliss” 딸기,“Bliss” клубника,“Bliss” Qulupnay
+108,“Bliss” pomegranate,"",2028-02-25,119,7,,,,,“Bliss” pomegranate,“Bliss” 석류,“Bliss” гранат,“Bliss” Anor
+110,“Сочная долина” мих,"",2028-03-02,121,7,,,,,“Сочная долина” мих,“Сочная долина” mix,“Сочная долина” микс,“Сочная долина” mix
+475,CHICKEN GRAIN,"",2026-01-26,488,19,,,,,CHICKEN GRAIN,CHICKEN GRAIN,PRIPRAVA DLYA KURITSI,TOVUQ UCHUN ZIRAVOR
+119,“DENA” Pineapple,"",0001-01-01,130,7,,,,,“DENA” Pineapple,“DENA” 파인애플,“DENA” ананас,“DENA” Ananas
+104,“Bliss” Apple,"",2028-06-24,115,7,,,,,“Bliss” Apple,“Bliss” 사과,“Bliss” яблоко,“Bliss” Olma
+111,“Сочная долина” Cherry,"",2028-03-02,122,7,,,,,“Сочная долина” Cherry,“Сочная долина” 체리,“Сочная долина” вишня,“Сочная долина” Gilos
+480,SPICES FOR MINCE MEAT,"",2026-01-26,493,19,,,,,SPICES FOR MINCE MEAT,다진 고기용 향신료,PRIPRAVA DLYA GOVYAJI FARSH,MOL QIYMA UCHUN ZIRAVOR
+113,“Сочная долина” pomegranate,"",2028-03-02,124,7,,,,,“Сочная долина” pomegranate,“Сочная долина” 석류,“Сочная долина” гранат,“Сочная долина” Anor
+114,“Сочная долина” mix,"",2028-03-02,125,7,,,,,“Сочная долина” mix,“Сочная долина” mix,“Сочная долина” микс,“Сочная долина” mix
+117,“DENA” peach,"",2028-01-25,128,7,,,,,“DENA” peach,“DENA” 복숭아,“DENA” персик,“DENA” Shaptoli
+483,SPICES FOR COOKING,"",2026-01-26,496,19,,,,,SPICES FOR COOKING,요리용 향신료,PRIPRAVA DLYA PLOVA,OSH UCHUN ZIRAVOR
+118,“DENA” Cherry,"",2028-02-01,129,7,,,,,“DENA” Cherry,“DENA” 체리,“DENA” вишня,“DENA” Gilos
+140,Coriander,"",2028-06-09,151,19,,,,,Coriander,고수풀,Кориандр,Koriander
+142,Black pepper,"",2028-05-09,153,19,,,,,Black pepper,후추,Перец черный,Qora qalampir
+144,Red pepper,"",2028-08-09,155,19,,,,,Red pepper,고추,Перец Красный,Qizil qalampir
+145,Black peppercorns,"",2028-08-09,156,19,,,,,Black peppercorns,검은 후추 열매,Перец черный горошек,Qora Murch urug’i
+146,Coriander cilantro,"",2028-06-08,157,19,,,,,Coriander cilantro,고수풀,Кориандр кинза,Maydalangan Kashinich urug’i
+126,“Caramel” black tea,"",2028-02-01,137,17,,,,,“Caramel” black tea,“캐러멜”  홍차,“карамель“черный чай,“Karamel” qora choy
+116,“DENA” Quince,"",0001-01-01,127,7,,,,,“DENA” Quince,“DENA” 모과,“DENA” Айва,“DENA” Behi
+121,“DENA” Mix,"",2028-03-01,132,7,,,,,“DENA” Mix,“DENA” Mix,“DENA” микс,“DENA” Mix
+124,“Blueberry” black tea,"",2028-02-01,135,17,,,,,“Blueberry” black tea,'블루베리' 홍차,“черника” черный чай,“Blueberry” qora choy
+125,“Berry” black tea,"",2028-02-01,136,17,,,,,“Berry” black tea,'말린 씨앗' 홍차,“Ягода” черный чай,“Berry” qora choy
+129,“LIPTON” Tea,"",2028-01-01,140,17,,,,,“LIPTON” Tea,“LIPTON” 차,“LIPTON” Чай,“LIPTON” choy
+703,Uzbek horse meat,"",2026-08-07,717,2,,,,,Uzbek horse meat,우즈벡 말고기,узбекский казы,QAZI
+131,Seasoning for pilaf,"",2028-06-09,142,19,,,,,Seasoning for pilaf,필라프 양념,Приправа для плова,Приправа для плова
+132,Seasoning for lagman,"",2028-09-01,143,19,,,,,Seasoning for lagman,라그만용 양념,Приправа для лагмана,Lagman uchun ziravor
+133,Universal seasoning,"",2028-06-09,144,19,,,,,Universal seasoning,만능조미료,Приправа универсальная,Universal ziravorlar
+134,Seasoning for meat,"",2028-09-03,145,19,,,,,Seasoning for meat,고기 양념,Приправа к мясу,Go'sht uchun ziravor
+135,Seasoning for shurpa,"",2028-01-01,146,19,,,,,Seasoning for shurpa,슈파 조미료,Приправа к шурпы,Sho’rva uchun ziravor
+136,Seasoning for shashyk,"",2028-09-02,147,19,,,,,Seasoning for shashyk,샤쉬크용 양념,Приправа для шашлыка,Shashlik uchun ziravor
+137,Seasoning for chicken,"",2028-06-09,148,19,,,,,Seasoning for chicken,닭고기 양념,Приправа для курицы,Tovuq  go’shti uchun ziravor
+139,Red pepper,"",2028-06-09,150,19,,,,,Red pepper,고추,Перец Красный,Qizil qalampir
+147,Coriander whole cilantro,"",2028-09-05,158,19,,,,,Coriander whole cilantro,고수 전체 고수,Кориандр целый кинза,Kashinich Urug’i
+749,SHOHONA OSH,"",2026-09-25,763,33,,,,,SHOHONA OSH,SHOHONA OSH,SHOHONA OSH,SHOHONA OSH
+178,“Seara” bran breast,"",2028-01-01,189,6,,,,,“Seara” bran breast,“Seara” 겨육 가슴,“Seara” отрубная грудка,“Seara” ko’krak laxm fele 2kg
+565,"","",2026-01-06,578,18,,,,,"","",MUKA 1KG,UN 1KG
+750,SHOHONA SHO'RVA,"",2026-10-09,764,33,,,,,SHOHONA SHO'RVA,SHOHONA SHO'RVA,SHOHONA SUP,SHOHONA SHO'RVA
+751,SHOHONA NO'XATSHORAK,"",2026-11-25,765,33,,,,,SHOHONA NO'XATSHORAK,SHOHONA NO'XATSHORAK,SHOHONA NO'XATSHORAK,SHOHONA NO'XATSHORAK
+566,GURUCH KAALAR 1KG,"",2026-01-07,579,18,,,,,GURUCH KAALAR 1KG,GURUCH KAALAR 1KG,GURUCH KAALAR 1KG,GURUCH KAALAR 1KG
+567,"","",2026-02-04,580,18,,,,,"","",MUKA 20KG,UN 20KG
+192,Lamb back fat,"",2028-05-06,203,1,,,,,Lamb back fat,양 꼬리,Баранина курдук ( с костей),Qo'y dumba
+149,“Bonduelle” peas,"",2028-05-02,160,12,,,,,“Bonduelle” peas,“Bonduelle” 완두콩,“Bonduelle” горох,“Bonduelle” No'xat
+179,Boneless frozen chicken thighs 2kg,"",2028-05-06,190,6,,,,,Boneless frozen chicken thighs 2kg,뼈없는 냉동 닭정육 2kg,Замороженные куриные бедра без костей 2kg,Suyaksiz muzlatilgan tovuq sonlari 2kg
+182,Coca-cola 1.25g,"",2028-08-09,193,7,,,,,Coca-cola 1.25g,코카•콜라 1.25g,Coca-cola 1.25g,Coca-cola 1.25g
+755,Burcu Eggplant,"",2028-07-18,769,33,,,,,Burcu Eggplant,Burcu 가지,Burcu Баклажан,Burcu Baklajon
+646,TRESKA FISH,"",2026-10-15,660,35,,,,,TRESKA FISH,명태,RIBA TRESKA,TRESKA BALIQ
+193,Lamb liver,"",2028-03-03,204,1,,,,,Lamb liver,양고기 간,Печень барана,Qo'y jigar
+184,Seasoning for meat,"",2028-03-04,195,19,,,,,Seasoning for meat,고기 양념,Приправа для мяси,Go'sht uchun ziravorlar
+156,HOMMOUS TAHINI,"",0001-01-01,167,12,,,,,HOMMOUS TAHINI,HOMMOUS TAHINI,HOMMOUS TAHINI,HOMMOUS TAHINI
+157,MOSHKICHKI,"",0001-01-01,168,12,,,,,MOSHKICHKI,모쉬키지리,Мошкичри,MOSHKICHKI
+180,Coca-cola,"",2028-05-06,191,7,,,,,Coca-cola,코카•콜라,Coca-cola,Coca-cola
+173,Coca-cola 2L,"",2028-09-09,184,7,,,,,Coca-cola 2L,코카콜라 2L,Coca-cola 2L,Coca-cola 2L
+150,Sweet corn,"",2028-09-08,161,12,,,,,Sweet corn,단 옥수수,Сладкая кукуруза,Shirin bodroq
+175,Ground beef,"",2028-01-01,186,2,,,,,Ground beef,다진 쇠고기,Говяжий фарш,Mol qiyma
+183,KOREAN CARROT SEASONING,"",2028-03-04,194,19,,,,,KOREAN CARROT SEASONING,한국당근양념,ПРИПРАВА ДЛЯ МОРКОВИ ПО КОРЕЙСКИ,Korea sabzi ziravorlari
+181,Coca-cola 0.5g,"",2028-08-09,192,7,,,,,Coca-cola 0.5g,코카•콜라  0.5g,Coca-cola 0.5g,Coca-cola 0.5g
+158,LAMB SOUP,"",0001-01-01,169,12,,,,,LAMB SOUP,양고기 수프,СУП ИЗ БАРАНИНЫ,Qo’y go’shtli sho'rva
+164,Spaghetti,"",0001-01-01,175,12,,,,,Spaghetti,스파게티,Спагетти,Spagetti
+165,Pearl Barley with beef,"",0001-01-01,176,12,,,,,Pearl Barley with beef,쇠고기 늘보리,Перловка,Перловка
+574,NOXOT BURCU 600GR,"",2026-02-13,587,12,,,,,NOXOT BURCU 600GR,NOXOT BURCU 600GR,NOXOT BURCU 600GR,NOXOT BURCU 600GR
+189,Lamb spine,"",2028-09-08,200,1,,,,,Lamb spine,양고기 척추,бараний позвоночник,Qo'y umurtqa
+573,"","",2026-03-13,586,12,,,,,"","",TOK BARGI,TOK BARGI
+575,"","",2026-01-14,588,12,,,,,"","",BURCU MAKKA JOXORI 200GR,BURCU MAKKA JOXORI 200GR
+576,"","",2026-02-06,589,12,,,,,"","",MAKKA JOXORI 400GR,MAKKA JOXORI 400GR
+176,Beef hooves,"",2028-03-23,187,2,,,,,Beef hooves,쇠고기 발굽,говяжыи копыта,Mol tuyoq
+191,Beef tail,"",2028-06-06,202,2,,,,,Beef tail,쇠고기 꼬리,Говяжий хвост,Mol dum
+754,Shohona buckwheat,"",2028-09-19,768,33,,,,,Shohona buckwheat,Shohona 메밀,Shohona гречиха,Shohona grechka
+647,SKUMBRIYA FISH,"",2026-05-07,661,35,,,,,SKUMBRIYA FISH,고등어,RIBA SKUMBRIYA,SKUMBRIYA BALIQ
+648,KAMAL FISH,"",2026-05-01,662,35,,,,,KAMAL FISH,갈치,RIBA KAMAL,KAMAL BALIQ
+752,SHOHONA BIRYANI,"",2028-11-12,766,33,,,,,SHOHONA BIRYANI,SHOHONA 비리야니,SHOHONA БИРЬЯНИ,SHOHONA BIRYANI
+55,sprats fish,"",2028-01-01,61,35,,,,,sprats fish,어린 물고기,шпроты рыба,Shprot baliq
+172,Coca-cola 1.25 g,"",2027-09-03,183,7,,,,,Coca-cola 1.25 g,코카콜라 1.25g,Coca-cola 1.25g,Coca-cola 1.25 g
+148,“BURCU” peas,"",2028-09-02,159,12,,,,,“BURCU” peas,“BURCU” 완두콩,“BURCU” горох,“BURCU” No'xat
+186,Beef Shabi shabi,"",2028-03-04,197,2,,,,,Beef Shabi shabi,우샤브 샤브,Шабy Шабу,Mol parrak
+187,Beef liver,"",2028-06-05,198,2,,,,,Beef liver,쇠고기 간,Говяжья печень,Mol jigar
+190,Lamb marrow bone,"",2028-09-04,201,1,,,,,Lamb marrow bone,양고기 사골뼈,Костный мозг баранины,Qo'y ilig suyag
+141,Zira,"",2027-06-08,152,19,,,,,Zira,지라,Зира,Zira
+753,Shohona Chicken,"",2028-02-11,767,33,,,,,Shohona Chicken,Shohona 닭,Shohona Kurinnoye tushonka,Shohona Tovuq Tushonkasi
+174,Beef Tenderloin,"",2028-08-01,185,2,,,,,Beef Tenderloin,설도,ГОВЯЖИЙ ВЫРЕЗКА,Mol ichki son yog'siz
+577,"","",2026-02-14,590,12,,,,,"","",BONDUELLE KUKURUZ,BONDUELLE KUKURUZ
+578,"","",2026-03-05,591,12,,,,,"","",NOXOT GREENFIELD,NOXOT GREENFIELD
+724,KOFE GOLD,"",2026-08-07,738,17,,,,,KOFE GOLD,KOFE GOLD,KOFE GOLD,KOFE GOLD
+649,yashkino wafers with lemon,"",2026-07-29,663,23,,,,,yashkino wafers with lemon,"",Yashkino vafli s limonom,Yashkino vafli limonli
+650,yashkino wafers with halva,"",2026-07-29,664,23,,,,,yashkino wafers with halva,"",Yashkino vafli s xalvoy,Yashkino vafli xalvoli
+651,yashkino wafers,"",2026-07-29,665,23,,,,,yashkino wafers,"",Yashkino vafli s orexom,Yashkino vafli orexli
+652,"","",2026-07-29,666,23,,,,,"","",Yashkino gollandskiy,Yashkino gollandskiy
+207,Rice 'BOBO',"",2028-08-08,218,18,,,,,Rice 'BOBO',쌀 'BOBO',Рис 'BOBO',Guruch 'BOBO' 1kg
+220,gingerbread chocolate,"",2027-05-09,231,8,,,,,gingerbread chocolate,프랴니키 초콜릿 맛,Пряники шоколадный,Pryaniki shokoladniy 300gr
+212,Lamb shoulder rack,"",2028-03-02,223,1,,,,,Lamb shoulder rack,숄더랙,каре ягненка стейк,QO'Y STEAK qovurg'a
+200,Whole cashews (with sea salt),"",2028-02-05,211,14,,,,,Whole cashews (with sea salt),통 캐슈넛(바다소금 포함),цельные кешью (с морской солью),Kaju (tuzli)
+232,Choco cream cookies,"",2028-04-17,243,23,,,,,Choco cream cookies,쿠키,Шоколадный печени,Chocolate cream cookies
+20,Lazzat foot,"",2028-02-20,26,22,,,,,Lazzat foot,Lazzat food,Минская 1кг,Lazzat food minskaya 1kg
+198,Almonds,"",2027-05-05,209,14,,,,,Almonds,아몬드,Миндаль,Bodom 1.36
+219,vanilla gingerbread,"",2028-09-08,230,8,,,,,vanilla gingerbread,프랴니키 바닐라,Пряники ванильный,pryanniki vanil 300gr
+216,lamb fore quarter,"",2025-02-02,227,1,,,,,lamb fore quarter,양포퀴터,Баранина про,Qo`y pro
+206,Cashews 'SAFO',"",2028-04-05,217,14,,,,,Cashews 'SAFO',통 캐슈넛 'SAFO',цельные кешью 'SAFO',Kaju  'SAFO'
+14,Sunflower oil 5 liter,"",2028-08-03,20,9,,,,,Sunflower oil 5 liter,해바라기유 5리터,Подсолнечное масло 5 литер,Kungaboqar Yog'i 5 liter
+210,peas,"",2028-03-04,221,18,,,,,peas,완두콩,горох,"""UVELKA"" GOROX"
+197,Pistachios,"",0001-01-01,208,14,,,,,Pistachios,피스타치오,фисташки,Pista 1.36
+704,UZBEK SMOKED BATTOCK 0.5KG,"",2026-07-02,718,1,,,,,UZBEK SMOKED BATTOCK 0.5KG,UZBEK SMOKED BATTOCK 0.5KG,KOPCHONNIY UZBEKSKIY KURDYUK 0.5KG,DUDLANGAN OZBEKISTON DUMBASI 0.5KG
+222,"Semolina ""uvelka""","",2028-02-11,233,27,,,,,"Semolina ""uvelka""",만나야 크루파,"""УВЕЛКА"" Манная круппа","""UVELKA"" Mannaya kasha"
+720,ETRE CEYLON 100 DONALIK,"",2026-07-31,734,17,,,,,ETRE CEYLON 100 DONALIK,ETRE CEYLON 100 DONALIK,ETRE CEYLON 100 DONALIK,ETRE CEYLON 100 DONALIK
+721,GREEN TEA 100PC,"",2026-07-30,735,17,,,,,GREEN TEA 100PC,GREEN TEA 100PC,ZELYONIY CHAY 100SHT,KOK CHOY 100 DONALIK
+727,WATER DAWIDOFF 5ML,"",2026-08-11,741,32,,,,,WATER DAWIDOFF 5ML,WATER DAWIDOFF 5ML,WATER DAWIDOFF 5ML,WATER DAWIDOFF 5ML
+722,BLACK TEA 100PC,"",2026-12-05,736,17,,,,,BLACK TEA 100PC,BLACK TEA 100PC,CHORNIY CHAY 100SHT,QORA CHOY 100 DONALIK
+723,TCHIBO KOFE,"",2026-08-27,737,17,,,,,TCHIBO KOFE,TCHIBO KOFE,TCHIBO KOFE,TCHIBO KOFE
+199,Almonds,"",2028-08-12,210,14,,,,,Almonds,아몬드,Миндаль,Bodom tuzli 1.13gr
+238,Champs orginal,"",2028-02-05,249,23,,,,,Champs orginal,쿠키,Печенье,Champs original
+806,Rollton kimchi,"",2028-09-10,820,36,,,,,Rollton kimchi,Rollton 김지,Rollton kimchi,Rollton kimchi
+138,Pepper,"",2028-06-09,149,19,,,,,Pepper,후추,Перец,Qora murch
+201,Whole cashews,"",2028-08-08,212,14,,,,,Whole cashews,통 캐슈넛,цельные кешью,Kaju
+213,Chicken Drumstick 2.5kg,"",2028-02-03,224,6,,,,,Chicken Drumstick 2.5kg,닭북채 2.5kg,Куриные голени2.5kg,Tovuq boldir 2.5kg
+223,Moxito,"",2028-07-02,234,7,,,,,Moxito,모히또,Мохито манго 500мл,Moxito mango 500ml
+725,KIRKE 5ML,"",2026-08-13,739,32,,,,,KIRKE 5ML,KIRKE 5ML,KIRKE 5ML,KIRKE 5ML
+214,DIZZY,"",0001-01-01,225,7,,,,,DIZZY,DIZZY,DIZZY,DIZZY
+234,Matcha cream cookies,"",2028-04-18,245,23,,,,,Matcha cream cookies,쿠키,Печени,Matcha cream cookies
+726,LACOSTE S 5ML,"",2026-08-08,740,32,,,,,LACOSTE S 5ML,LACOSTE S 5ML,LACOSTE S 5ML,LACOSTE S 5ML
+728,ANTONIO BANDERRAS 5ML,"",2026-10-01,742,32,,,,,ANTONIO BANDERRAS 5ML,ANTONIO BANDERRAS 5ML,ANTONIO BANDERRAS 5ML,ANTONIO BANDERRAS 5ML
+729,BLUE DE CHANEL 5ML,"",2026-08-07,743,32,,,,,BLUE DE CHANEL 5ML,BLUE DE CHANEL 5ML,BLUE DE CHANEL 5ML,BLUE DE CHANEL 5ML
+730,MOON 5ML,"",2026-10-08,744,32,,,,,MOON 5ML,MOON 5ML,MOON 5ML,MOON 5ML
+731,BLACK AFGANO 5ML,"",2026-09-10,745,32,,,,,BLACK AFGANO 5ML,BLACK AFGANO 5ML,BLACK AFGANO 5ML,BLACK AFGANO 5ML
+732,BALDER SALIN 5ML,"",2026-09-11,746,32,,,,,BALDER SALIN 5ML,BALDER SALIN 5ML,BALDER SALIN 5ML,BALDER SALIN 5ML
+738,MADAWI 5ML,"",2026-11-13,752,32,,,,,MADAWI 5ML,MADAWI 5ML,MADAWI 5ML,MADAWI 5ML
+739,KELVIN KLEIN 5ML,"",2026-11-20,753,32,,,,,KELVIN KLEIN 5ML,KELVIN KLEIN 5ML,KELVIN KLEIN 5ML,KELVIN KLEIN 5ML
+209,Pearl barley,"",0001-01-01,220,18,,,,,Pearl barley,진주 보리,перловая,"Marvarid arpa"" UVELKA "" perlovka"
+217,bread,"",2027-02-03,228,8,,,,,bread,빵,Лепешка,NON
+817,Flavis strawberry,"",2028-09-11,831,7,,,,,Flavis strawberry,Flavis 딸기,Flavis klubnika,Flavis klubnika
+756,"Riga Golden Sprat Tomato Sauce, 200g","",2028-11-20,770,35,,,,,"Riga Golden Sprat Tomato Sauce, 200g",리가 골드 스프랫 토마토 소스 200g,Рига Голд Шпрот В Томате 200гр,Riga Gold Tomatli Shprot 200gr
+275,Ginseng,"",2029-09-19,286,21,,,,,Ginseng,6년근 홍삼,Женьшен 4 банки,Jenshen 6yillik 4ta bonka
+579,"","",2026-03-12,592,12,,,,,"","",ZELYONIY GOROX,GOROX YASHIL
+580,"","",2026-01-16,593,12,,,,,"","",UKSUS LIMONNAYA,LIMON SIRKASI
+582,NUTELLA,"",2026-03-20,595,3,,,,,NUTELLA,NUTELLA,NUTELLA,NUTELLA KATTA
+273,Condensed milk 900gr,"",2025-12-13,284,15,,,,,Condensed milk 900gr,연유 900gr,Ичня сгущенное молоко 900гр,"""ICHNYA"" quyiltirilgan sut 900gr"
+658,Xozyaystvennoye milo,"",2026-10-09,672,20,,,,,Xozyaystvennoye milo,Xozyaystvennoye milo,Xozyaystvennoye milo,KIr sovun
+663,Frico sir,"",2028-04-08,677,22,,,,,Frico sir,Frico sir,Frico sir,Frico sir
+661,Ermak oq tuzli semechka,"",2026-04-23,675,30,,,,,Ermak oq tuzli semechka,Ermak oq tuzli semechkaErmak oq tuzli semechka,Ermak beliy solyonaya semechka,Ermak oq tuzli semechka
+581,OLIVKA,"",2026-02-21,594,13,,,,,OLIVKA,OLIVKA,OLIVKA,OLIVKA
+265,Sunflower seeds 300gr salted,"",2025-12-12,276,30,,,,,Sunflower seeds 300gr salted,해바라기씨 300gr,Джин великан солёный 300гр,Djin velikan 300gr tuzli
+239,Champs dark,"",2028-02-06,250,23,,,,,Champs dark,쿠키,Печенье,Champs dark
+246,Burcu jam,"",2028-09-26,257,29,,,,,Burcu jam,잼 딸기,Burcu джем клубника,Burcu qulpnay murabbo 700gr
+248,Burcu jam,"",2028-09-19,259,29,,,,,Burcu jam,젤리 잼,Burcu вишня джем,Burcu murabbo olcha 700gr
+257,Sunflower seeds 250gr,"",2029-03-15,268,30,,,,,Sunflower seeds 250gr,해바라기씨,Джин семечки 250гр солёный,DJIN semechki 250gr tuzli
+254,Sunflower oil 5l,"",2029-02-13,265,9,,,,,Sunflower oil 5l,해바라기유 5리터,Растительное масла 5л,Semechka Yoĝ 5l
+256,Sunflower seeds 140gr DJIN,"",2028-04-18,267,30,,,,,Sunflower seeds 140gr DJIN,해바라기씨 140gr,Джин солёный 140гр,DJIN semechki tuzli 140gr
+258,Sunflower seeds 350gr,"",2028-03-14,269,30,,,,,Sunflower seeds 350gr,해바라기씨 350gr,Джин солёный 350гр,Djin semechki 350gr tuzli
+260,Sunflower seeds 250gr,"",2028-03-07,271,30,,,,,Sunflower seeds 250gr,해바라기씨,Джин 250гр,Djin 250gr
+259,Sunflower seeds 140gr DJIN,"",2028-03-13,270,30,,,,,Sunflower seeds 140gr DJIN,해바라기씨,Джин 140гр,DJIN 140gr
+261,Sunflower seeds 350gr,"",2028-04-18,272,30,,,,,Sunflower seeds 350gr,해바라기씨,Джин 350гр,Djin 350gr
+587,"","",2026-03-13,600,9,,,,,"","","",ZIG'IR YOG'I
+264,Sunflower seeds 200gr salted,"",2028-01-10,275,30,,,,,Sunflower seeds 200gr salted,해바라기씨 200gr,Джин великан солёный 200гр,Djin velikan 200gr tuzli
+247,Burcu jam,"",2028-05-16,258,29,,,,,Burcu jam,살구 잼,Джем абриклсовый,Burcu murabbo òrik 700gr
+263,Djin Sunflower seeds 100gr salted,"",2028-04-17,274,30,,,,,Djin Sunflower seeds 100gr salted,해바라기씨 100gr,Джин великан солёный 100гр,Djin velikan 100gr
+268,Burcu apricot jam 380gr,"",2028-05-15,279,29,,,,,Burcu apricot jam 380gr,잼 380gr,Burcu джем абрикос 380гр,Burcu murabbo òrik 380gr ( apricot)
+274,Ginseng,"",2028-10-23,285,21,,,,,Ginseng,6년근 홍삼 2개,Женьшень 2 банки,Jenshen 2ta bonka 6yillik
+276,Ginseng health time 30ea,"",2029-07-18,287,21,,,,,Ginseng health time 30ea,홍삼 헬스 타임,Женьшень время здоровья 30шт,Jenshen health time 30ta
+277,Ginseng health time 60ea,"",2029-01-08,288,21,,,,,Ginseng health time 60ea,홍삼 헬스 타임,Женьшень время здоровья 60шт,Jenshen health time 60ta
+757,Amberfish Sprat in Tomato 200g,"",2028-02-06,771,35,,,,,Amberfish Sprat in Tomato 200g,Amberfish Sprat in Tomato 200g,Amberfish Килка В Томате 200гр,Amberfish Tomatli Kilka 200gr
+653,Sugar 1kg,"",2027-04-30,667,20,,,,,Sugar 1kg,"",Saxar 1kg,Shakar 1kg
+654,Beseda palochki,"",2026-10-09,668,23,,,,,Beseda palochki,"",Beseda palochki,Beseda palochki teramisli
+662,Ermak semechka qora tuzli,"",2026-06-04,676,30,,,,,Ermak semechka qora tuzli,Ermak semechka qora tuzli,Ermak semechka chorniy solyoniy,Ermak semechka qora tuzli
+655,Beseda sticks vanil,"",2026-10-09,669,23,,,,,Beseda sticks vanil,"",Beseda palochki vanilniy,Beseda palochki vanil
+657,Glister tooth paste,"",2026-05-15,671,20,,,,,Glister tooth paste,"",Glister zubnaya pasta,Tish pastasi glister
+665,"","",2026-07-03,679,7,,,,,"","",Maxi chay greyfruit,Maxi choy greyfruit
+666,Borjomi 0.5,"",2026-05-31,680,7,,,,,Borjomi 0.5,Borjomi 0.5,Borjomi 0.5,Borjomi 0.5
+667,Borjomi bottle 0.5,"",2026-06-10,681,7,,,,,Borjomi bottle 0.5,"",Borjomi baklashechniy 0.5,Borjomi baklashkali 0.5
+668,Lipton tea,"",2026-08-07,682,7,,,,,Lipton tea,"",Lipton chay,Lipton choy
+583,NUTELLA 380GR,"",2026-02-12,596,3,,,,,NUTELLA 380GR,NUTELLA 380GR,NUTELLA 380GR,NUTELLA 380GR KICHIK
+584,HAVANNA CHOCOLATE,"",2026-03-21,597,3,,,,,HAVANNA CHOCOLATE,HAVANNA SHKALAD,HAVANNA SHKALAD,HAVANNA SHKALAD
+585,LIGO YER YONG'OQ,"",2026-02-12,598,3,,,,,LIGO YER YONG'OQ,LIGO YER YONG'OQ,LIGO PEANUT,LIGO YER YONG'OQ
+586,MYOD S OREXOM,"",2026-02-18,599,3,,,,,MYOD S OREXOM,MYOD S OREXOM,MYOD S OREXOM,ASAL VA YONG'OQ ARALASHMASI
+656,Margarin,"",2026-05-01,670,15,,,,,Margarin,Margarin,Margarin,Margarin
+659,Xitoy semechka tuzli,"",2026-07-09,673,30,,,,,Xitoy semechka tuzli,Xitoy semechka tuzli,Semechka kitayskaya s solyu,Xitoy semechka tuzli
+660,Xitoy semechka tuzsiz 260gr,"",2026-06-12,674,30,,,,,Xitoy semechka tuzsiz 260gr,Xitoy semechka tuzsiz 260gr,kitayskaya semechka bez soli,Xitoy semechka tuzsiz 260gr
+589,OLIVE OIL 5L,"",2026-04-03,602,9,,,,,OLIVE OIL 5L,"",OLIVKOVAYA MASLA 5L,OLIVKA YOG'I 5L
+590,"","",2026-04-28,603,9,,,,,"","",KUKURUZOVAYA MASLO 1.8L,KUKURUZ YOG'I 1.8L
+445,Salt,"",2025-11-14,458,20,,,,,Salt,소금,sol,TUZ
+670,Chortoq 0.5l,"",2026-04-28,684,7,,,,,Chortoq 0.5l,Chortoq 0.5l,Chortoq 0.5l,Chortoq 0.5l
+592,CHORNIY XLEB,"",2026-03-05,605,8,,,,,CHORNIY XLEB,CHORNIY XLEB,CHORNIY XLEB,QORA NON
+672,Chortoq 0.3 limon,"",2026-05-01,686,7,,,,,Chortoq 0.3 limon,Chortoq 0.3 limon,Chortoq 0.3 limon,Chortoq 0.3 limon
+673,Sparkling water,"",2026-06-10,687,7,,,,,Sparkling water,"",Gazirovannaya voda,Gazli suv
+674,Fanta 0.33,"",2026-07-31,688,7,,,,,Fanta 0.33,Fanta 0.33,Fanta 0.33,Fanta 0.33
+675,Pepsi 1.25l,"",2026-08-06,689,7,,,,,Pepsi 1.25l,Pepsi 1.25l,Pepsi 1.25l,Pepsi 1.25l
+676,Fanta 1.25l,"",2026-06-17,690,7,,,,,Fanta 1.25l,Fanta 1.25l,Fanta 1.25l,Fanta 1.25l
+677,Monster blue,"",2026-05-07,691,7,,,,,Monster blue,"",Monster siniy,Monster kok
+678,Monster yellow,"",2026-06-04,692,7,,,,,Monster yellow,"",Monster joltiy,Monster sariq
+758,Amberfish Sprat in Oil 200g,"",2028-09-10,772,35,,,,,Amberfish Sprat in Oil 200g,기름에 절인 앰버피시 멸치 200g,Amberfish Килка в масле 200gr,Amberfish Kilka yog'li 200gr
+680,Monster red,"",2026-07-11,694,7,,,,,Monster red,"",Monster krasniy,Monster qizil
+442,VANILIN,"",2025-09-19,455,20,,,,,VANILIN,VANILIN,VANILIN,VANILIN
+301,Philadelphia cheese,"",2028-01-17,312,15,,,,,Philadelphia cheese,츠지,Philadelphia сыр,Philadelphia cheese
+315,Sausage 500gr,"",2028-11-15,326,22,,,,,Sausage 500gr,소시지 500gr,Молочная 500гр,HALAL BARAKA  MOLOCHNAYA 500GR
+320,Sausage 1kg,"",2028-01-11,331,22,,,,,Sausage 1kg,소시지 1kg,Самаркандская 1кг,Lazzatfoods samarkandskaya 1kg
+185,Beef honeycomp tripe (stomach),"",2028-02-03,196,2,,,,,Beef honeycomp tripe (stomach),쇠고기 깐양,говяжий желудок..,Mol qorin
+325,Sausage 450gr,"",2028-12-07,336,22,,,,,Sausage 450gr,소시지 500gr,Охотничий 450гр,LAZZATFOODS OXOTNICHIY 450GR
+446,Salt,"",2026-01-15,459,20,,,,,Salt,소금,sol,TUZ
+441,RAZRIXITEL,"",2025-12-25,454,20,,,,,RAZRIXITEL,RAZRIXITEL,RAZRIXITEL,RAZRIXITEL
+443,Droja 500gr,"",2025-12-12,456,20,,,,,Droja 500gr,Droja 500gr,Droja 500gr,Droja 500gr
+444,Droja 125gr,"",2025-08-08,457,20,,,,,Droja 125gr,Droja 125gr,Droja 125gr,Droja 125gr
+492,KOKOS BOLAKCHALARI,"",2025-12-26,505,19,,,,,KOKOS BOLAKCHALARI,KOKOS BOLAKCHALARI,KOKOSOVAYA STRUJKA,KOKOS BOLAKCHALARI
+499,LIMONNAYA KISLOTA,"",2026-01-26,512,19,,,,,LIMONNAYA KISLOTA,LIMONNAYA KISLOTA,LIMONNAYA KISLOTA,LIONAYA KISLOTA
+313,Sausage 500gr,"",2028-11-15,324,22,,,,,Sausage 500gr,소시지 500 great,Варёная колбаса докторская 500гр,HALAL BARAKA  DOKTORSKAYA 500GR
+322,Sausage 800gr,"",2028-11-02,333,22,,,,,Sausage 800gr,소시지 800gr,Сервелат 800гр,LAZZATFOODS REGISTON 800gr
+296,Kefir,"",2028-10-09,307,15,,,,,Kefir,요구르트,Фамили фуд кефир 1л,Family food kefir 1l
+503,ZIRA SARAH 1KG,"",2026-02-18,516,19,,,,,ZIRA SARAH 1KG,ZIRA SARAH 1KG,SARAH ZIRA 1KG,ZIRA SARAH 1KG
+509,TOVUQ BULYONI,"",2026-02-25,522,19,,,,,TOVUQ BULYONI,TOVUQ BULYONI,KURINIY BULYON,TOVUQ BULYONI
+312,Sausage indeyka 500gr,"",2028-11-08,323,22,,,,,Sausage indeyka 500gr,소시지 500gr,Индейка 500гр,HALAL BARAKA  INDEYKA 500GR
+318,Sausage 500gr,"",2028-12-05,329,22,,,,,Sausage 500gr,소시지,Минская 500гр,LAZZATFOODS minskaya 500gr
+314,Sausage 500gr,"",2028-11-08,325,22,,,,,Sausage 500gr,소시지 500gr,Варёная колбаса любительская 500гр,HALAL BARAKA LYUBITELSKAYA 500GR
+319,Sausage 1kg,"",2028-01-04,330,22,,,,,Sausage 1kg,소시지 1kg,Минская 1кг,LAZZATFOODS minskaya 1kg
+591,corn oil,"",2027-11-05,604,9,,,,,corn oil,옥수수 유,KUKURUZOVAYA MASLO 3.6,KUKURUZ YOG'I 3.6L
+311,Sausage 800gr elitnaya,"",2028-12-12,322,22,,,,,Sausage 800gr elitnaya,소시지 800gr,Копчёная колбаса элитная 800гр,HALAL BARAKA ELITNAYA 800GR
+177,Halal Whole chicken,"",2028-01-09,188,6,,,,,Halal Whole chicken,Halal 닭고기 한 마리,Halal Целая курица,Halal Butun tovuq 1+1=2 DONASI
+289,ZAIQA MUNGBEAN 800GR,"",2028-05-09,300,18,,,,,ZAIQA MUNGBEAN 800GR,녹두 800gr,Zaiqa Маш 800гр,ZAIQA MOSH 800GR
+290,ZAIQA CHICK PEAS 800GR,"",2028-04-12,301,18,,,,,ZAIQA CHICK PEAS 800GR,병아리콩 800gr,ZAIQA горох 800гр,ZAIQA OSH NOXAT 800GR
+288,ZAIQA BUCKWHEAT 800GR,"",2028-04-11,299,18,,,,,ZAIQA BUCKWHEAT 800GR,매밀 800gr,Zaiqa гречка,ZAIQA grechka 800gr
+303,The laughing cow cheese,"",2028-03-14,314,15,,,,,The laughing cow cheese,치즈,Сыр плавленый,The laughing cow cheese
+321,Sausage 500gr,"",2028-11-08,332,22,,,,,Sausage 500gr,소시지 500gr,Сервелат 500гр,LAZZATFOODS servelat 500gr
+295,Kefir,"",2028-09-12,306,15,,,,,Kefir,요구르트,Кефир 950мл роял фуд,ROYAL FOOD kefir 950ml
+307,Sausage 500gr,"",2028-12-20,318,22,,,,,Sausage 500gr,소시지 500gr,Конченная колбаса Московская 500гр,HALAL BARAKA  MOSKOVSKAYA 500GR
+309,Sausage VETCHINA 600gr,"",2025-02-14,320,22,,,,,Sausage VETCHINA 600gr,소시지 600gr,HALAL BARAKA ветчина 600гр,HALAL BARAKA  VETCHINA 600gr
+333,Toffix fruit chew 1kg plastic,"",2028-06-14,344,3,,,,,Toffix fruit chew 1kg plastic,토픽스 1kg,Тоффикс 1кг,Toffix fruit chew 1kg plastic
+350,Mild cheddar cheese 907gr,"",2028-12-06,361,15,,,,,Mild cheddar cheese 907gr,치즈 907gr,Сыр 907гр,Mild cheddar cheese 907gr
+334,Coffex 1kg candy,"",2028-06-19,345,3,,,,,Coffex 1kg candy,Coffex candy 1kg,Coffex 1kg,Coffex 1kg
+339,Candy 250gr,"",2028-01-10,350,3,,,,,Candy 250gr,캔디 250gr,Рот фронт мятная 250гр,Rot front myatnaya 250gr
+681,Redbull,"",2026-06-29,695,7,,,,,Redbull,Redbull,Redbull,Redbull
+335,Chocolate 250gr,"",2028-02-07,346,3,,,,,Chocolate 250gr,초콜릿 250gr,Бабаевские шоколадный вкус 250гр,Babaevskiy shokoladniy vkus 250gr
+352,Monterey jack cheese,"",2028-12-20,363,15,,,,,Monterey jack cheese,츠지 907 gr,Сыр 907гр,Monterey jack cheese 907gr
+682,Riks pomegranate,"",2026-07-30,696,7,,,,,Riks pomegranate,"",Riks granat,Anor suvi riks
+354,Dena olma,"",,365,,,,,,Dena olma,Dena olma,Dena olma,Dena olma
+683,Moxito lime,"",2026-04-08,697,7,,,,,Moxito lime,Moxito lime,Moxito lime,Moxito lime
+684,Moxito pomegranate,"",2026-06-24,698,7,,,,,Moxito pomegranate,"",Moxito granat,Moxito anor
+360,Cookies,"",,371,23,,,,,Cookies,쿠키 구운 우유 맛,Коровка топлёное молоко,Korovka pishirilgan sutli
+361,Cookies cacao,"",,372,23,,,,,Cookies cacao,쿠키 초콜릿 맛,Коровка вкус какао 375гр,Korovka kakaolik 375gr
+345,Family food sour cream,"",2028-06-05,356,15,,,,,Family food sour cream,사워 크림,Фамили фуд сметана 200гр,Family food Smetana 200gr
+363,Wafers,"",,374,23,,,,,Wafers,와플,Алёнка миндалём и карамели,Alyonka mini tortlar caramel bodom 250gr
+553,LAYS ZELYONIY,"",2026-04-21,566,30,,,,,LAYS ZELYONIY,LAYS ZELYONIY,LAYS ZELYONIY,LAYS ZELYONIY
+366,Wafers 300gr,"",,377,23,,,,,Wafers 300gr,Wafers 300gr,Коровка вафли шоколадный 300гр,Korovka vafli shokoladlik 300gr
+593,STRAWBERRY JAM,"",2026-02-20,606,29,,,,,STRAWBERRY JAM,STRAWBERRY JAM,tegen varenye klubnichnoye,tegen klubnika murabbo
+594,RASPBERRY JAM,"",2026-01-14,607,29,,,,,RASPBERRY JAM,RASPBERRY JAM,zulya varenye molinovoye,zulya malina murabbo
+595,RASPBERRY JAM,"",2026-03-19,608,29,,,,,RASPBERRY JAM,RASPBERRY JAM,Uzkand malina murabbo,Uzkand malina murabbo
+596,BURCU RASPBERRY,"",2026-02-06,609,29,,,,,BURCU RASPBERRY,BURCU RASPBERRY,burcu malina  380gr,burcu maklina murabbo 380gr
+372,Wafers 150gr,"",,383,23,,,,,Wafers 150gr,와플 150gr,Коровка вафли вкус шоколада,Korovka shokoladniy vafli 150gr
+374,Wafers 250gr,"",,385,23,,,,,Wafers 250gr,Wafersv250gr,Коровка вафельный конфеты 250гр,Korovka vafli sutli 250gr
+375,Monster yellow,"",,386,7,,,,,Monster yellow,몬스터 노랑,Монстр жёлтый,Monster sariq
+376,Monster red,"",,387,7,,,,,Monster red,몬스터 빨간색,Монстр красный,Monster qizil
+377,Monster mango,"",,388,7,,,,,Monster mango,몬스터 만고,Монстр манго,Monster mango
+349,Gouda cheese 680gr,"",2028-12-14,360,15,,,,,Gouda cheese 680gr,치즈 680gr,Гауда сыр 680гр,Gouda 680gr
+365,Wafers 300gr,"",2028-03-13,376,23,,,,,Wafers 300gr,와플 300gr,Коровка вафли вкус молоко,Korovka vafli sutli 300gr
+337,Chocolate 250gr,"",2028-03-07,348,3,,,,,Chocolate 250gr,초콜릿 250gr,Рот фронт батончики 250гр,Rot front batonchiki 250gr
+332,Toffix fruit chew 1kg,"",2028-12-18,343,3,,,,,Toffix fruit chew 1kg,토픽스 1kg,Toffix  конфеты 1кг,Toffix fruit chew 1kg
+353,Cottage cheese 400gr,"",2028-12-20,364,15,,,,,Cottage cheese 400gr,코티지 치즈,family food творог 400гр,Family food tvarog 400gr
+733,TALHA 5ML,"",2027-07-02,747,32,,,,,TALHA 5ML,TALHA 5ML,TALHA 5ML,TALHA 5ML
+336,Chocolate,"",2028-02-14,347,3,,,,,Chocolate,초콜릿 250gr,Кара кум 250гр,Kara-kum 250gr
+362,Alyonka wafers,"",2028-02-13,373,23,,,,,Alyonka wafers,와플,Алёнка ванильные мини тортики,Alyonka mini tortlar 250gr bodom
+347,Cottage cheese,"",2028-12-20,358,15,,,,,Cottage cheese,코트지 치즈,Роял фуд творог 400гр,Royal food tvarog 400gr
+734,FRESH BLUE 5ML,"",2026-07-28,748,32,,,,,FRESH BLUE 5ML,FRESH BLUE 5ML,FRESH BLUE 5ML,FRESH BLUE 5ML
+351,Golby jack cheese 907 gr,"",2028-11-15,362,15,,,,,Golby jack cheese 907 gr,치즈 907 gr,Сыр 907гр,Golby jack cheese 907gr
+340,Candy 250gr,"",2028-01-17,351,3,,,,,Candy 250gr,캔디 250gr,Рот фронт лимонная 250гр,Rot front limonnaya 250gr
+341,Chocolate 250gr,"",2028-01-10,352,3,,,,,Chocolate 250gr,초콜릿 250gr,Наслаждение 250гр,Naslajdeniya 250gr
+323,Sausage 500gr,"",2028-12-14,334,22,,,,,Sausage 500gr,소시지  500gr,Сервелат 500gr,LAZZATFOODS salyami 500gr
+342,Chocolate 250gr,"",2028-02-07,353,3,,,,,Chocolate 250gr,초콜릿 250gr,Коровка конфеты 250гр,Korovka lyubimaya 250gr
+343,Chocolate 250gr,"",2028-03-13,354,3,,,,,Chocolate 250gr,초콜릿 250gr,Тоффе 250гр,Toffee 250gr
+359,Cookies milk,"",2028-06-05,370,23,,,,,Cookies milk,쿠키 우유 맛,Коровка вкус молоко,"""Korovka "" sutli pechenye"
+344,Smetana royal food,"",2028-10-18,355,15,,,,,Smetana royal food,요구르트,Роял фудсметана 200гр,Royal food Smetana 200gr
+348,Havarti cheese 907gr,"",2028-12-13,359,15,,,,,Havarti cheese 907gr,치즈 907gr,Хаварти сыр 907 гр,Havarti 907gr
+396,Goat meat,"",2025-09-20,407,34,,,,,Goat meat,염소,Козье мясо,ECHKI GO'SHTI maydalangan
+94,“Greenfield” Black tea,"",2028-02-03,105,17,,,,,“Greenfield” Black tea,“Greenfield” 홍차,“Greenfield” Черный чай,“Greenfield” Qora choy
+697,Kashkaval brinza 500gr,"",2026-05-04,711,15,,,,,Kashkaval brinza 500gr,Kashkaval brinza 500gr,Kashkaval brinza 500gr,Kashkaval brinza 500gr
+386,Tomato pasta 320,"",2025-08-14,397,31,,,,,Tomato pasta 320,토마토 페이스트 320gr,Томатная паста 320гр,Burcu tomat pasta 320gr
+404,Nowvot,"",2025-10-22,415,14,,,,,Nowvot,나우보트,Новвот,Novvot
+695,Maxfun chocolate,"",2026-07-10,709,3,,,,,Maxfun chocolate,max fun,Maxfun shkalad,Maxfun shkalad
+687,Kula behi,"",2026-06-05,701,7,,,,,Kula behi,Kula behi,Kula behi,Kula behi
+346,Cottage cheese,"",2028-11-16,357,15,,,,,Cottage cheese,코티지 치즈,Роял фуд творог 200гр,Royal food tvarog 200gr
+696,Kazakstan chocolate,"",2026-06-17,710,3,,,,,Kazakstan chocolate,Kazakstan shkalad,Kazakstan shkalad,Kazakstan shkalad
+394,AYRON  WITH BASIL,"",,405,7,,,,,AYRON  WITH BASIL,바질 아이란,Айран с базиликом,AYRON RAYHONLI
+393,AYRON,"",0001-01-01,404,7,,,,,AYRON,아이란,AYRON,AYRON
+392,Indian Rice,"",2026-01-01,403,18,,,,,Indian Rice,인도 쌀,Индийский рис,Basmati gurunch
+698,Ermak kurt 60gr,"",2026-06-03,712,15,,,,,Ermak kurt 60gr,Ermak kurt 60gr,Ermak kurt 60gr,Ermak qurt 60gr
+395,Lamp ribs,"",0001-01-01,406,1,,,,,Lamp ribs,양 플립,бараньи ребрышки,Qo'y napis qovurg'a
+305,HALAL BARAKA sausage beef 500gr,"",2028-11-08,316,22,,,,,HALAL BARAKA sausage beef 500gr,소시지 beef,Говяжий сосиски 500гр,HALAL BARAKA Sosiska Mol goshti 500gr
+685,Uzkand cherry juice,"",2026-07-08,699,7,,,,,Uzkand cherry juice,"",Uzkand kompot vishnya,Uzkand gilos kampot
+406,ENERGY  ENERGY DRINK 2pc,"",2025-10-24,419,7,,,,,ENERGY  ENERGY DRINK 2pc,세이버 에너지 드링크,"Энергетический напиток ""SABER"" 2sht",SABER ENERGETIK ICHIMLIGI 2dona
+688,Kula cherry,"",2026-06-11,702,7,,,,,Kula cherry,"",Kula chereshnya,Kula gilos
+403,Raisin,"",2025-10-17,414,14,,,,,Raisin,건포도,Изюм,Mayiz
+405,Pomegranate juice,"",2025-07-24,418,7,,,,,Pomegranate juice,선류주스,SABER гранатовый сок,SABER anor suvi
+686,Moxito blueberry,"",2026-04-21,700,7,,,,,Moxito blueberry,Moxito blueberry,Moxito blueberry,Moxito blueberry
+401,Tail fat UZB product 500gr,"",2026-03-04,412,1,,,,,Tail fat UZB product 500gr,양 꼬리 우즈백산 500gr,Узбекский курдюк 500gr,UZB Dumba 500gr
+689,Chernogolovka lemon,"",2026-07-09,703,7,,,,,Chernogolovka lemon,"",Chernogolovka limon,Chernogolovka limon
+690,Hydrolife 0.5l,"",2026-07-10,704,7,,,,,Hydrolife 0.5l,Hydrolife 0.5l,Hydrolife 0.5l,Hydrolife 0.5l
+691,"","",2026-06-30,705,7,,,,,"","","",Kula shaftoli
+597,burcu klubnika 380gr,"",2026-03-11,610,29,,,,,burcu klubnika 380gr,burcu klubnika 380gr,burcu klubnika 380gr,burcu klubnika 380gr
+692,Chernogolovka buratino,"",2026-06-19,706,7,,,,,Chernogolovka buratino,Chernogolovka buratino,Chernogolovka buratino,Chernogolovka buratino
+693,Chernogolovka peach,"",2026-06-26,707,7,,,,,Chernogolovka peach,"",Chernogolovka dyushes,Chernogolovka nok
+694,Chernogolovka tarxun,"",2026-05-14,708,7,,,,,Chernogolovka tarxun,Chernogolovka tarxun,Chernogolovka tarxun,Chernogolovka tarxun
+382,Tomato pasta,"",2026-05-07,393,31,,,,,Tomato pasta,토마토 페이스터,Томатная паста 1500gr,safo tomat pasta 1500gr
+400,Pizza bread 10pc,"",2025-08-15,411,8,,,,,Pizza bread 10pc,피자 빵 10ro,тесто для лаваша,Lavash noni 10 dona
+601,klubnika murabbo 900gr,"",2028-02-12,614,29,,,,,klubnika murabbo 900gr,klubnika murabbo 900gr,klubnichnoye varenye 900gr,klubnika murabbo 900gr
+598,burcu anjir murabbo 700gr,"",2026-04-11,611,29,,,,,burcu anjir murabbo 700gr,burcu anjir murabbo 700gr,burcu injirnoye varenye 700gr,burcu anjir murabbo 700gr
+600,vita malina murabbo,"",2026-02-05,613,29,,,,,vita malina murabbo,vita malina murabbo,vita varenye malinoviy,vita malina murabbo
+398,Lamb shoulder roll HALAL,"",2026-03-26,409,1,,,,,Lamb shoulder roll HALAL,양 어깨롤 냉동 HALAL,Баранина мясо без кости HALAL,Qo'y rulet lahim HALAL
+387,Tomato pasta 600gr,"",2026-01-24,398,31,,,,,Tomato pasta 600gr,토마토 페이스트 600gr,Томатная паста 600гр,Burcu tomat pasta 600gr
+397,LAMB steak meat Halal,"",2026-07-22,408,1,,,,,LAMB steak meat Halal,양 조각 스테이크용 Halal,Баранина спина,QO'Y BELI (stek bob) halal
+102,110  “Тоза” Green tea,"",2028-03-02,113,17,,,,,110  “Тоза” Green tea,110  “Тоза” 녹차,110  “Тоза” Зелёный чай,110 “Тоза” Ko’k choy
+196,Lamb boneless,"",2028-05-05,207,1,,,,,Lamb boneless,양고기 뒤다리살,Баранина филе (без костей),Qo’y go'sht laxm (SETKA)
+364,Wafers 250gr,"",2028-12-20,375,23,,,,,Wafers 250gr,와플,Мишка косолапый вафельный тортики 250гр,Mishka kosolapiy wafli tort 250gr
+381,Tomato paste 1500gr burcu,"",2028-02-13,392,31,,,,,Tomato paste 1500gr burcu,토마터 페이스터 1500gr,Burcu томатная паста 1500гр,Burcu tomat pasta 1500gr
+602,"","",2026-08-14,615,16,,,,,"","",divella makaron,divella makaron
+705,ELROY MASLO 400GR,"",2026-09-03,719,15,,,,,ELROY MASLO 400GR,ELROY MASLO 400GR,ELROY MASLO 400GR,ELROY MASLO 400GR
+609,Maxeev mayonez provansal   400gr,"",2026-04-09,623,31,,,,,Maxeev mayonez provansal   400gr,Maxeev mayonez provansal   400gr,Maxeev mayonez provansal   400gr,Maxeev mayonez provansal   400gr
+426,FROZEN FRIES,"",2025-12-24,439,20,,,,,FROZEN FRIES,냉동 감자 튀김,замороженный картофель фри,MUZLATILGAN KARTOSHKA
+699,Ermak kurt rayhanom 60gr,"",2026-06-05,713,15,,,,,Ermak kurt rayhanom 60gr,Ermak kurt rayhanom 60gr,Ermak kurt rayhanom 60gr,Ermak qurt rayhonli 60gr
+448,BURCU MIXED VEGETABLES PICKLE  4.950GR,"",2026-04-11,461,13,,,,,BURCU MIXED VEGETABLES PICKLE  4.950GR,부르쿠 혼합 야채 피클  4.950GR,БУРДЖУ СМЕШАННЫЙ ОВОЩНОЙ РАССОЛ  4.950GR,BURCU ARALASH SABZAVOTLAR TUZLAMASI 4.950GR
+610,tomatnaya kilka,"",2026-05-01,624,12,,,,,tomatnaya kilka,tomatnaya kilka,tomatnaya kilka,tomatli kilka
+250,Mayonnaise 820ml egg,"",2025-03-07,261,31,,,,,Mayonnaise 820ml egg,마요네지 820ml,Майонез 820мл с перепелиным яйцом,Mayonez 820ml prepelinim yatsom
+449,Assorted,"",2026-04-30,462,1,,,,,Assorted,분류된,ASORTI,Asarti
+606,burcu mayonez 450gr,"",2026-03-06,619,31,,,,,burcu mayonez 450gr,burcu mayonez 450gr,burcu mayonez 450gr,burcu mayonez 450gr
+796,Somsa dough 1kg,"",2028-09-17,810,33,,,,,Somsa dough 1kg,삼사 반죽 1kg,Testo Dlya Somsi 1kg,Somsa xamiri 1kg
+453,Mol bo'yin suyak,"",2026-03-19,466,2,,,,,Mol bo'yin suyak,Mol bo'yin suyak,Mol bo'yin suyak,Mol bo'yin suyak
+452,LAMB SHANK,"",2026-08-04,465,1,,,,,LAMB SHANK,0,0,QUY BOLDIR
+450,Sheep shank,"",2026-06-17,463,1,,,,,Sheep shank,양 생크,Баранья голяшка,Qo'y boldir (suyakli ilik qo'y oyoqchasi)
+463,DUCK MEAT,"",2026-03-19,476,6,,,,,DUCK MEAT,오리 고기,UTINOYE MYASO,O'RDAK GOSHTI
+379,Tomato paste 430gr,"",2028-06-18,390,31,,,,,Tomato paste 430gr,토마토 페이스터 430gr,Tegen томатная паста 430gr,Tegen tomat pasta 430gr
+22,DOKTORSKAYA,"",2028-01-01,28,22,,,,,DOKTORSKAYA,독도르스키,ДОКТОРСКАЯ,"""  HALAL BARAKA ""DOKTORSKAYA"
+470,DIZZY,"",2026-10-02,483,7,,,,,DIZZY,Dizzy,diy energetik,DIZZY
+25,Molochnaya,"",2028-01-01,31,22,,,,,Molochnaya,말로치니,Молочная,"""HALAL BARAKA ""Molochnaya"
+26,ELITNAYA,"",2028-05-23,32,22,,,,,ELITNAYA,엘리트나야,ЕЛИТНАЯ,"""HALAL BARAKA"" ELITNAYA"
+27,LYUBITELSKAYA,"",2028-05-23,33,22,,,,,LYUBITELSKAYA,LYUBITSKAYA,ЛЮБИТЕЛЬСКАЯ,"""HALAL BARAKA ""LYUBITELSKAYA"
+615,Soya sousi,"",2026-03-07,629,31,,,,,Soya sousi,Soya sousi,Soyeviy sous,Soya sousi
+304,Chicken sausage 500gr,"",2028-11-15,315,22,,,,,Chicken sausage 500gr,치킨 소시지 500gr,Куриная сосиска 500гр,HALAL BARAKA Sosiska tovuq 500gr
+430,'LA COTENA' JALAPENO   1.8L,"",2026-03-11,443,13,,,,,'LA COTENA' JALAPENO   1.8L,'LA COTENA' JALAPENO 1.8L,'LA COTENA' JALAPENO 1.8L,'LA COTENA' JALAPENO 1.8L
+431,UZBEK RICE 'LAZER',"",2026-03-17,444,18,,,,,UZBEK RICE 'LAZER',25 / 5 000 우즈베키스탄 레이저 라이스,Uzbekskiy ris,O'ZBEKISTON LAZER GURUCHI
+815,Flavis lime,"",2028-09-09,829,7,,,,,Flavis lime,Flavis 라임,Flavis lime,Flavis lime
+813,Natakhtari tarxun,"",2028-08-15,827,7,,,,,Natakhtari tarxun,Natakhtari 타라곤,Natakhtari tarxun,Natakhtari tarxun
+816,Flavis pear,"",2028-07-09,830,7,,,,,Flavis pear,Flavis 배,Flavis grusha,Flavis nok
+795,Lies beef 1kg,"",2028-08-15,809,33,,,,,Lies beef 1kg,거짓말 소고기 1kg,Манти Говяжьи 1кг,Manti mol goshtli 1kg
+814,Flavis pomegranate,"",2028-07-31,828,7,,,,,Flavis pomegranate,Flavis 석류,Flavis granat,Flavis anor
+467,jacobs kofe,"",2026-03-13,480,17,,,,,jacobs kofe,jacobs kofe,jacobs kofe,jacobs kofe
+794,Dolma 600-700gr,"",2028-12-04,808,33,,,,,Dolma 600-700gr,Dolma 600-700gr,Dolma 600-700gr,Dolma 600-700gr
+700,Ermak kurt 30gr,"",2026-05-15,714,15,,,,,Ermak kurt 30gr,Ermak kurt 30gr,Ermak kurt 30gr,Ermak qurt 30gr
+455,BURCU MAYONEZ 550GR,"",2025-12-17,468,31,,,,,BURCU MAYONEZ 550GR,BURCU MAYONEZ 550GR,BURCU MAYONEZ 550GR,BURCU MAYONEZ 550GR
+604,vita tomat,"",2026-04-10,617,31,,,,,vita tomat,vita tomat,vita tomat,vita tomat
+605,ittifoq tomat 430gr,"",2026-04-10,618,31,,,,,ittifoq tomat 430gr,ittifoq tomat 430gr,ittifoq tomat 430gr,ittifoq tomat 430gr
+608,Maxeev mayonez 400gr perepelinovim yaitsom,"",2026-04-03,621,31,,,,,Maxeev mayonez 400gr perepelinovim yaitsom,Maxeev mayonez 400gr perepelinovim yaitsom,Maxeev mayonez 400gr perepelinovim yaitsom,Maxeev mayonez 400gr perepelinovim yaitsom
+611,Heinz ketchup 400gr,"",2026-03-06,625,31,,,,,Heinz ketchup 400gr,Heinz ketchup 400gr,Heinz ketchup 400gr,Heinz ketchup 400gr
+612,Heinz ketchup 800gr,"",2026-03-06,626,31,,,,,Heinz ketchup 800gr,Heinz ketchup 800gr,Heinz ketchup 800gr,Heinz ketchup 800gr
+613,Chili sous,"",2026-02-06,627,31,,,,,Chili sous,Chili sous,Chili sous,Chili sous
+614,Heinz vinegar 5%,"",2026-03-18,628,31,,,,,Heinz vinegar 5%,Heinz uksus 5%,Heinz uksus 5%,Heinz uksus 5%
+616,Salsa sous,"",2026-04-23,630,31,,,,,Salsa sous,Salsa sous,Salsa sous,Salsa sous
+627,Anjir murabbo 750gr,"",2026-04-11,641,29,,,,,Anjir murabbo 750gr,Anjir murabbo 750gr,Varenye injir 750gr,Anjir murabbo 750gr
+484,PETRUSHKA UKROP SMES,"",2026-02-19,497,19,,,,,PETRUSHKA UKROP SMES,PETRUSHKA UKROP SMES,PETRUSHKA UKROP SMES,PETRUSHKA UKROP SMES
+476,CHICKEN GRAIN,"",2026-01-26,489,18,,,,,CHICKEN GRAIN,"",PRIPRAVA DLYA KURITSI,TOVUQ UCHUN ZIRAVOR
+8,LAMB NECK,"",2028-02-02,14,1,,,,,LAMB NECK,양고기 목,Баранина шея,QO'Y BO'YIN
+619,Ramyon 5pc,"",2026-03-20,633,36,,,,,Ramyon 5pc,Ramyon 5sht,Ramyon 5sht,Ramyon 5 talik
+620,Ramyon 5pc hot,"",2026-07-09,634,36,,,,,Ramyon 5pc hot,Ramyon 5sht gorkiy,Ramyon 5sht gorkiy,Ramyon 5talik achchiq
+473,AMERICAN RICE 10KG,"",2026-03-12,486,18,,,,,AMERICAN RICE 10KG,AMERIKA GURUCHI 10KG,AMERIKANSKIY RIS 10KG,AMERIKA GURUCHI 10KG
+485,UKROP,"",2026-02-17,498,19,,,,,UKROP,UKROP,UKROP,UKROP
+635,Amrita tok bargi,"",2026-03-12,649,13,,,,,Amrita tok bargi,Amrita tok bargi,Amrita tok bargi,Amrita tok bargi
+762,Korovka Milk Chocolate 500gr,"",2028-11-16,776,3,,,,,Korovka Milk Chocolate 500gr,코로브카 밀크 초콜릿 500g,Молочный шоколад Korovka 500 г,Korovka Sutli Shokolad 500gr
+504,VITAL CHAY,"",2026-03-19,517,17,,,,,VITAL CHAY,VITAL CHAY,VITAL CHAY,vital choy
+510,"","",2026-02-13,523,17,,,,,"","",CHORNIY CHAY S BERGAMOTOM,BERGAMOTLI QORA CHOY
+638,Zulya ogursi,"",2026-03-21,652,13,,,,,Zulya ogursi,Zulya ogursi,Zulya ogursi,Zulya ogursi
+625,"","",2026-04-02,639,18,,,,,"","",Zaiqa gorox,Zaiqa yarim noxot
+626,"","",2026-05-21,640,18,,,,,"","",Zaiqa loviya,Zaiqa loviya
+629,Svoya melnitsa rojki,"",2026-06-12,643,16,,,,,Svoya melnitsa rojki,Svoya melnitsa rojki,Svoya melnitsa rojki,Svoya melnitsa rojki
+630,Burcu garlic,"",2026-04-01,644,13,,,,,Burcu garlic,"",Burcu qalampir,Burcu qalampir
+631,Burcu pickle,"",2026-04-12,645,13,,,,,Burcu pickle,"","",Burcu tuzlama
+632,Euro food lecho,"",2026-06-25,646,13,,,,,Euro food lecho,Euro food lecho,Euro food lecho,Euro food lecho
+633,Tegen dunganskiy peres,"",2026-04-22,647,13,,,,,Tegen dunganskiy peres,Tegen dunganskiy peres,Tegen dunganskiy peres,Tegen dunganskiy peres
+634,Tegen adjika,"",2026-04-02,648,13,,,,,Tegen adjika,Tegen adjika,Tegen adjika,Tegen adjika
+636,Zulya ogurtsi v tomatnom soke,"",2026-05-08,650,13,,,,,Zulya ogurtsi v tomatnom soke,Zulya ogurtsi v tomatnom soke,Zulya ogurtsi v tomatnom soke,Zulya ogurtsi v tomatnom soke
+637,Zulya kornishon,"",2026-05-01,651,13,,,,,Zulya kornishon,Zulya kornishon,Zulya kornishon,Zulya kornishon
+640,Tegen assorti,"",2026-04-08,654,13,,,,,Tegen assorti,Tegen assorti,Tegen assorti,Tegen assorti
+641,Euro food kornishon v tomate,"",2026-05-14,655,13,,,,,Euro food kornishon v tomate,Euro food kornishon v tomate,Euro food kornishon v tomate,Euro food kornishon v tomate
+477,LAMBGRAIN,"",2026-01-26,490,19,,,,,LAMBGRAIN,LAMBGRAIN,PRIPRAVA DLYA BARANINA,QOY GOSHT UCHUN ZIRAVOR
+478,GRAIN FOR LAGMAN,"",2026-01-26,491,19,,,,,GRAIN FOR LAGMAN,GRAIN FOR LAGMAN,PRIPRAVA DLYA LAGMANA,LAGMAN  UCHUN ZIRAVOR
+479,GRAIN FOR SHASHLIK,"",2026-01-26,492,19,,,,,GRAIN FOR SHASHLIK,GRAIN FOR SHASHLIK,PRIPRAVA DLYA SHASHLIK,SHASHLIK UCHUN ZIRAVOR
+481,SEASONING FOR KOREAN CARROTS,"",2026-01-26,494,19,,,,,SEASONING FOR KOREAN CARROTS,한국 당근 양념,PRIPRAVA DLYA KOREYSKOY MORKOVI,KORES SABZI UCHUN ZIRAVOR
+482,Seasoning for fish,"",2026-01-26,495,19,,,,,Seasoning for fish,생선 양념,PRIPRAVA DLYA RIBI,BALIQ UCHUN ZIRAVOR
+486,MORSKOY TUZ,"",2025-12-25,499,19,,,,,MORSKOY TUZ,MORSKOY TUZ,MORSKOY SOL,MORSKOY TUZ
+487,BARBARIS,"",2026-01-01,500,19,,,,,BARBARIS,BARBARIS,BARBARIS,BARBARIS
+488,BAZILIK,"",2026-01-08,501,19,,,,,BAZILIK,BAZILIK,BAZILIK,BAZILIK
+491,GRANADA,"",2026-03-31,504,23,,,,,GRANADA,GRANADA,GRANADA,GRANADA
+493,BUTUN QORA MURCH,"",2025-12-16,506,19,,,,,BUTUN QORA MURCH,BUTUN QORA MURCH,PERES CHORNIY GOROSHEK,BUTUN QORA MURCH
+494,QORA EZILGAN MURCH,"",2026-02-18,507,19,,,,,QORA EZILGAN MURCH,QORA EZILGAN MURCH,PERES CHORNIY MOLOTIY,QORA EZILGAN MURCH
+496,UNIVERSAL PRIPRAVA,"",2025-12-11,509,19,,,,,UNIVERSAL PRIPRAVA,UNIVERSAL PRIPRAVA,UNIVERSAL PRIPRAVA,UNIVERSAL PRIPRAVA
+497,LAVROVIY LIST,"",2026-04-15,510,19,,,,,LAVROVIY LIST,LAVROVIY LIST,LAVROVIY LIST,QURITILGAN BARG
+500,DROJA,"",2026-03-11,513,19,,,,,DROJA,DROJA,DROJA,DROJA
+501,KORITSA,"",2025-12-26,514,19,,,,,KORITSA,KORITSA,KORITSA,KORITSA
+502,ZIRA 1KG,"",2025-10-09,515,19,,,,,ZIRA 1KG,ZIRA 1KG,ZIRA 1KG,ZIRA 1KG
+507,ZIRA 450GR,"",2026-01-07,520,19,,,,,ZIRA 450GR,ZIRA 450GR,ZIRA 450GR,ZIRA 450GR
+508,GOVYAJI BULYON,"",2026-02-06,521,19,,,,,GOVYAJI BULYON,GOVYAJI BULYON,GOVYAJI BULYON,MOL BULYONI
+628,Varenye vishneviy,"",2026-06-20,642,29,,,,,Varenye vishneviy,Varenye vishneviy,Varenye vishneviy,Murabbo gilos
+515,MAKFA PERYA,"",2026-03-25,528,16,,,,,MAKFA PERYA,MAKFA PERYA,MAKFA PERYA,MAKFA PERYA
+518,MAKFA RAKUSHKA,"",2026-03-25,531,16,,,,,MAKFA RAKUSHKA,MAKFA RAKUSHKA,MAKFA RAKUSHKA,MAKFA RAKUSHKA
+517,MAKFA SPIRAL,"",2026-03-25,530,16,,,,,MAKFA SPIRAL,MAKFA SPIRAL,MAKFA SPIRAL,MAKFA SPITAL
+519,MAKFA SPAGETTI,"",2026-03-25,532,16,,,,,MAKFA SPAGETTI,MAKFA RAKSPAGETTI USHKA,MAKFA SPAGETTI,MAKFA SPAGETTI
+521,MAKFA GNEZDA,"",2026-03-25,534,16,,,,,MAKFA GNEZDA,MAKFA GNEZDA,MAKFA GNEZDA,MAKFA GNEZDA
+520,MAKFA SPAGETTI,"",2026-03-25,533,16,,,,,MAKFA SPAGETTI,MAKFA SPAGETTI,MAKFA SPAGETTI,MAKFA SPAGETTI
+522,MAKIZ PERYA 700GR,"",2026-01-02,535,16,,,,,MAKIZ PERYA 700GR,MAKIZ PERYA 700GR,MAKIZ PERYA 700GR,MAKIZ PERYA 700GR
+524,SAR PRUJINA,"",2026-03-12,537,16,,,,,SAR PRUJINA,SAR PRUJINA,SAR PRUJINA,SAR PRUJINA
+525,SAR VERMISHEL,"",2026-03-12,538,16,,,,,SAR VERMISHEL,SAR VERMISHEL,SAR VERMISHEL,SAR VERMISHEL
+527,MAKIZ SHILPILDOQ,"",2025-12-31,540,16,,,,,MAKIZ SHILPILDOQ,MAKIZ SHILPILDOQ,MAKIZ SHILPILDOQ,MAKIZ SHILPILDOQ
+528,RICO PASTA SPAGETTI,"",2026-01-08,541,16,,,,,RICO PASTA SPAGETTI,RICO PASTA SPAGETTI,RICO PASTA SPAGETTI,RICO PASTA SPAGETTI
+643,Euro food kornishon,"",2026-04-30,657,13,,,,,Euro food kornishon,Euro food kornishon,Euro food kornishon,Euro food kornishon
+464,PELMEN,"",2026-01-15,477,33,,,,,PELMEN,PELMEN,PELMEN,CHUCHVARA
+644,Euro food assorty,"",2026-05-15,658,13,,,,,Euro food assorty,Euro food assorti,Euro food assorti,Euro food assorti
+701,Oil 3L,"",2026-07-14,715,9,,,,,Oil 3L,"",Podsolnechnoye maslo 3L,Yog' 3L
+532,RICCO SEBZELI BURGU,"",2027-07-23,545,16,,,,,RICCO SEBZELI BURGU,RICCO SEBZELI BURGU,RICCO SEBZELI BURGU,RICCO SEBZELI BURGU
+534,ALMONDS 950 GR,"",2026-04-03,547,14,,,,,ALMONDS 950 GR,"",MINDAL,ALMONDS 950 GR
+538,PEANUTS,"",2026-03-17,551,14,,,,,PEANUTS,PEANUTS,PEANUTS,PEANUTS 1.6 KG
+539,"","",2026-02-12,552,14,,,,,"","","",OSH MAYIZ
+548,"","",2026-02-09,561,18,,,,,"","","",UVELLKA GOROX 800GR
+549,"","",2026-03-19,562,18,,,,,"","","",UVELKA PERLOVKA
+547,YELLOW CARROT,"",2026-04-09,560,18,,,,,YELLOW CARROT,SARIQ SABZI,JPLTIY MORKOV,SARIQ SABZI
+447,BAKING SODA 500gr,"",2025-12-18,460,20,,,,,BAKING SODA 500gr,베이킹 소다 500g,Pishevaya soda 500gr,PISHIRIQ SODASI 500gr
+526,SAR VITKI,"",2026-03-12,539,16,,,,,SAR VITKI,SAR VITKI,SAR VITKI,SAR VITKI
+706,ELROY MASLO 454GR,"",2026-05-15,720,15,,,,,ELROY MASLO 454GR,ELROY MASLO 454GR,ELROY MASLO 454GR,ELROY MASLO 454GR
+708,ANCHOR MASLO 200GR,"",2026-09-03,722,15,,,,,ANCHOR MASLO 200GR,ANCHOR MASLO 200GR,ANCHOR MASLO 200GR,ANCHOR MASLO 200GR
+735,ANSOR 5ML,"",2026-09-11,749,32,,,,,ANSOR 5ML,ANSOR 5ML,ANSOR 5ML,ANSOR 5ML
+736,MOLECULA 020 5ML,"",2026-11-14,750,32,,,,,MOLECULA 020 5ML,MOLECULA 020 5ML,MOLECULA 020 5ML,MOLECULA 020 5ML
+737,BLOOD OF SHAHID 5ML,"",2026-08-07,751,32,,,,,BLOOD OF SHAHID 5ML,BLOOD OF SHAHID 5ML,KROV SHAHIDA 5ML,SHAHID QONI 5ML
+740,LACOSTE 5ML,"",2027-03-12,754,32,,,,,LACOSTE 5ML,LACOSTE 5ML,LACOSTE 5ML,LACOSTE 5ML
+741,NARCOTIK 5ML,"",2026-07-25,755,32,,,,,NARCOTIK 5ML,NARCOTIK 5ML,NARCOTIK 5ML,NARCOTIK 5ML
+331,Truffle chocolate 1kg,"",2028-06-20,342,3,,,,,Truffle chocolate 1kg,초콜릿 1kg,Шоколад труфле 1кг,Truffle shokolad 1kg
+529,RICCO PERYA MAKARON,"",2028-02-23,542,16,,,,,RICCO PERYA MAKARON,RICCO PERYA MAKARON,RICCO PERYA MAKARON,RICCO PERYA MAKARON
+544,SAFO MINDAL 200gr,"",2026-03-12,557,14,,,,,SAFO MINDAL 200gr,SAFO MINDAL 200gr,SAFO MINDAL 200gr,SAFO BODOM 200gr
+546,SAFO MAYIZ 0.25,"",2026-04-16,559,14,,,,,SAFO MAYIZ 0.25,SAFO MAYIZ 0.25,SAFO IZYUM 0.25,SAFO MAYIZ 0.25
+542,WALLNUTS,"",2026-04-16,555,14,,,,,WALLNUTS,YONG'OQ 1.36 KG,OREX 1.36 KG,YONG'OQ 1.36 KG
+805,Rollton Chicken,"",2028-02-12,819,36,,,,,Rollton Chicken,롤턴 치킨,Rollton Kuriniy,Rollton Tovuq
+537,DRIED FIG 1KG,"",2026-02-02,550,14,,,,,DRIED FIG 1KG,QURITILGAN ANJIR 1KG,QURITILGAN ANJIR 1KG,QURITILGAN ANJIR 1KG
+51,“MAKIZ” PAUTINKA  Pasta,"",2028-01-01,57,16,,,,,“MAKIZ” PAUTINKA  Pasta,“MAKIZ” PAUTINKA   파스타,“MAKIZ” PAUTINKA   Макарон,“MAKIZ” PAUTINKA  Makaron 400gr
+765,Felicita 250gr,"",2028-10-14,779,3,,,,,Felicita 250gr,Felicita 250gr,Felicita 250gr,Felicita 250gr
+764,Krokand 250gr,"",2028-08-14,778,3,,,,,Krokand 250gr,Krokand 250gr,Krokand 250gr,Krokand 250gr
+742,GOLUBSI 600-700GR,"",2026-07-11,756,33,,,,,GOLUBSI 600-700GR,GOLUBSI 600-700GR,GOLUBSI 600-700GR,GOLUBSI 600-700GR
+743,DOMOSHNIY LAG'MON 1KG,"",2026-08-13,757,33,,,,,DOMOSHNIY LAG'MON 1KG,DOMOSHNIY LAG'MON 1KG,DOMOSHNIY LAG'MON 1KG,DOMOSHNIY LAG'MON 1KG
+414,'MADINAH DELIGHTS KHUDRI'  DATES,"",2026-01-28,427,,,,,,'MADINAH DELIGHTS KHUDRI'  DATES,'MADINAH DELIGHTS KHUDRI'  날짜,'MADINAH DELIGHTS KHUDRI'  ФИНИКИ,'MADINAH DELIGHTS KHUDRI'  XURMOLARI
+415,'MADINAH DELIGHTS SAFAWI'  DATES,"",2026-01-28,428,,,,,,'MADINAH DELIGHTS SAFAWI'  DATES,'MADINAH DELIGHTS SAFAWI'  날짜,'MADINAH DELIGHTS SAFAWI'  ФИНИКИ,'MADINAH DELIGHTS SAFAWI'  XURMOLARI
+421,'MADINAH DELIGHTS SAGAI'  DATES,"",2026-06-07,434,,,,,,'MADINAH DELIGHTS SAGAI'  DATES,'MADINAH DELIGHTS SAGAI'  날짜,'MADINAH DELIGHTS SAGAI'  ФИНИКИ,'MADINAH DELIGHTS SAGAI'  XURMOLARI
+790,ROLLTON IDISHLI,"",2026-09-17,804,36,,,,,ROLLTON IDISHLI,ROLLTON IDISHLI,ROLLTON IDISHLI,ROLLTON IDISHLI
+570,DRIED FIG,"",2026-02-13,583,20,,,,,DRIED FIG,SUSHONNIY INJIR,SUSHONNIY INJIR,QURITILGAN ANJIR
+774,XALVA,"",2026-09-02,788,3,,,,,XALVA,XALVA,XALVA,XALVA
+798,Lamb Back Leg,"",2027-03-12,812,1,,,,,Lamb Back Leg,양 통뒷다리,Baranina Zadnaya Noga,Qo'y orqa son
+791,HOT LUNCH Hot,"",2028-09-04,805,36,,,,,HOT LUNCH Hot,HOT LUNCH 매운,HOT LUNCH Острый,HOT LUNCH ACHCHIQ
+800,Beef steak,"",2028-11-06,814,2,,,,,Beef steak,소부체살,Говяжий стейк,Mol Steyk lahm
+811,Barbikan peach,"",2028-10-01,825,7,,,,,Barbikan peach,Barbikan 복숭아,Barbikan persik,Barbikan shaftoli
+804,Dizzy,"",2028-12-11,818,7,,,,,Dizzy,Dizzy,Dizzy,Dizzy
+783,BISCREAM,"",2028-10-16,797,23,,,,,BISCREAM,BISCREAM,BISCREAM,BISCREAM
+771,Citrus Fantasia 250g,"",2028-08-28,785,3,,,,,Citrus Fantasia 250g,시트러스 판타지 250g,Цитрусовая фантазия 250 г,Sitrusovaya Fantasiya 250gr
+770,Kopiko 1kg,"",2028-08-20,784,3,,,,,Kopiko 1kg,Kopiko 1kg,Kopiko 1kg,Kopiko 1kg
+31,Anchor butter,"",2028-05-23,37,15,,,,,Anchor butter,안잘  버터,Сливочное масло,Anchor sariyog’ 454gr
+195,Lamb back leg,"",2028-03-04,206,1,,,,,Lamb back leg,양고기 뒷다리,Баранья задняя  нога,Qo’y orqa son
+568,MEDJOOL DATES (SMALLLER),"",2028-02-17,581,20,,,,,MEDJOOL DATES (SMALLLER),MEDJOOL DATES (SMALLLER),MEDJOOL DATES (SMALLLER),MEDJOOL XURMOLARI (KICHIKROQ) 500GR
+809,Barbikan anor,"",2028-06-10,823,7,,,,,Barbikan anor,Barbikan 석류,Barbikan granat,Barbikan anor
+802,Beef Marrow Bone,"",2028-10-02,816,2,,,,,Beef Marrow Bone,소 골수뼈,Govajyi kosti,Mol ilik suyak
+810,Barbikam wheat,"",2028-06-05,824,7,,,,,Barbikam wheat,Barbikam 밀,Barbikam pshenitsa,Barbikam bug'doy
+812,Natakhtari pear,"",2028-08-07,826,7,,,,,Natakhtari pear,Natakhtari 배,Natakhtari grusha,Natakhtari dyushes
+799,Lamb Ribs,"",2028-02-12,813,1,,,,,Lamb Ribs,양갈비,Barani Rebrishki,Qo'y napis qovurg'a
+807,Galinablanka chicken,"",2028-02-06,821,19,,,,,Galinablanka chicken,갈리나 블랑카,Galinablanka kurinniy,Galinablanka tovuq donalik
+808,Galinablanka beef,"",2028-10-27,822,19,,,,,Galinablanka beef,갈리나 블랑카,Galinablanka govyajiy,Galinablanka mol donalik
+797,Sellected Lamb Ribs,"",2028-11-26,811,1,,,,,Sellected Lamb Ribs,엄선된 양갈비,Otborniye Barani Rebra,Saralangan Qo'y Qovurg'a
+788,MAXIM COFFEE 20X,"",2028-08-20,802,17,,,,,MAXIM COFFEE 20X,맥심 커피 20X,МАКСИМ КОФЕ 20X,MAXIM COFE 20X
+792,HOT LUNCH Chicken,"",2028-09-11,806,36,,,,,HOT LUNCH Chicken,HOT LUNCH 닭,HOT LUNCH Куриный,HOT LUNCH Tovuqli
+782,Tulski with Fruit,"",2028-08-06,796,23,,,,,Tulski with Fruit,툴스키 과일,Фруктовое печенье Тульски,Tulskiy Mevali
+787,OMEGA UKROP,"",2028-09-10,801,19,,,,,OMEGA UKROP,OMEGA 욱롭,OMEGA УКРОП,OMEGA UKROP
+785,Korovka Cookies with Milk,"",2028-07-17,799,23,,,,,Korovka Cookies with Milk,우유를 곁들인 코로브카 쿠키,KOROVKA S SGUSHONNIY MOLOKOLI,Korovka Pechenye Sutli
+780,Milka Cookies,"",2028-09-24,794,23,,,,,Milka Cookies,밀카 쿠키,Печенье Милка,Milka Pechenye
+779,2000 Maxi,"",2028-05-15,793,23,,,,,2000 Maxi,2000 Maxi,2000 Maxi,2000 Maxi
+777,Tango chocolate with almonds 1kg,"",2028-10-24,791,3,,,,,Tango chocolate with almonds 1kg,아몬드가 들어간 탱고 초콜릿 1kg,Шоколад «Танго» с миндалем 1kg,Bodomli Tango shokoladi 1kg
+776,Tango Milk Chocolate 1kg,"",2028-08-14,790,3,,,,,Tango Milk Chocolate 1kg,탱고 밀크 초콜릿 1kg,"Молочный шоколад Tango, 1 кг",Sutli Tango Shokoladi 1kg
+775,Twix 1.4 kg,"",2028-11-12,789,3,,,,,Twix 1.4 kg,Twix 1.4 kg,Twix 1.4 kg,Twix 1.4 kg
+772,Toffix with Coffee,"",2028-06-05,786,3,,,,,Toffix with Coffee,토픽스 코펠리,Тоффикс с кофе,Toffix Kofeli
+769,Ti Amo Chocolate 1kg,"",2028-07-11,783,3,,,,,Ti Amo Chocolate 1kg,티 아모 초콜릿 1kg,Ti Amo Shkalad 1kg,Ti Amo shokolad 1kg
+768,Lastochka 250gr,"",2028-07-03,782,3,,,,,Lastochka 250gr,Lastochka 250gr,Lastochka 250gr,Lastochka 250gr
+803,Cow tongue,"",2027-02-19,817,2,,,,,Cow tongue,우설,Govyajyi yazik,Mol til
+801,Lamp boneless,"",2028-12-10,815,1,,,,,Lamp boneless,뒤다리 살,бараны мякоть,Qo'y orqa son lahm
+434,MADINAH DELIGHT DJORDAN MEDJOOL DATES,"",2025-12-26,447,20,,,,,MADINAH DELIGHT DJORDAN MEDJOOL DATES,MADINAH DELIGHT DJORDAN MEDJOOL DATES,MADINAH DELIGHT DJORDAN MEDJOOL DATES,MADINAH DELIGHT DJORDAN MEDJOOL XURMOLARI 500GR
+543,SAFO WALLNUT,"",2026-03-13,556,14,,,,,SAFO WALLNUT,SAFO OREX 200gr,SAFO OREX 200gr,SAFO YONG'OQ 200gr
+425,PRESSED LAMB MEAT,"",2026-03-26,438,1,,,,,PRESSED LAMB MEAT,압착 양고기,ПРЕССОВАННОЕ БАРАНИНА МЯСО,PRESLANGAN QUY GO'SHTI
+221,Lamb square ribs,"",2028-02-09,232,1,,,,,Lamb square ribs,양 어깨 갈비,Бараний ребры,Qo`y yelka qovurg`a (qozon)
+820,Bonlife Oil 3L,"",2028-12-18,834,9,,,,,Bonlife Oil 3L,본라이프 오일 3L,Bonlife Podsolnechnoye maslo 3L,Bonlife semechka Yog' 3L
+819,Bonlife Oil 5L,"",2027-04-10,833,9,,,,,Bonlife Oil 5L,본라이프 오일 5L,Bonlife Podsolnechnoye maslo5L,Bonlife Yog' 5L
+818,Sarah basmati rice1kg,"",2027-05-21,832,18,,,,,Sarah basmati rice1kg,Sarah basmati 쌀 1kg,Sarah basmati ris 1kg,Sarah basmati guruch 1kg
+793,SHIN RAMYUN HALAL,"",2028-05-15,807,36,,,,,SHIN RAMYUN HALAL,신라면 할랄,SHIN RAMYUN HALAL,SHIN RAMYUN HALAL
+763,Craffers Oatmeal Cookies,"",2028-08-15,777,23,,,,,Craffers Oatmeal Cookies,크래퍼스 오트밀 쿠키,Овсяное печенье Craffers,Crafers Ovsyannaya Pechenye

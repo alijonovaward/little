@@ -1,0 +1,255 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<style>
+    /* Inputlarni o'ta aniq ko'rinadigan qilish */
+    .form-control, .form-select {
+        border: 2px solid #343a40 !important; /* To'q chegara */
+        border-radius: 6px;
+        padding: 10px;
+        color: #000;
+        background-color: #fff !important;
+    }
+    .form-control:focus {
+        border-color: #4154f1 !important;
+        box-shadow: 0 0 8px rgba(65, 84, 241, 0.2);
+    }
+    .form-label {
+        font-weight: 700;
+        color: #212529;
+        margin-bottom: 5px;
+    }
+    .section-box {
+        background: #ffffff;
+        border: 1px solid #ced4da;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .price-section {
+        background-color: #f8f9fa;
+        border: 2px dashed #0d6efd;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    .check-item {
+        background: #fff;
+        border: 2px solid #343a40;
+        padding: 10px 15px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .form-check-input {
+        width: 22px;
+        height: 22px;
+        border: 2px solid #343a40 !important;
+        cursor: pointer;
+    }
+    .form-check-label {
+        margin-left: 10px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    /* CHECKBOX (PTICHKA) DIZAYNI */
+    .custom-check-group {
+        background: #f8f9fa;
+        padding: 15px;
+        border: 2px solid #000;
+        border-radius: 8px;
+    }
+
+    .check-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+
+    /* Checkboxni o'zini kattalashtirish */
+    input[type="checkbox"] {
+        width: 30px !important;
+        height: 30px !important;
+        margin-right: 15px;
+        cursor: pointer;
+        border: 2px solid #000 !important;
+        appearance: auto; /* Brauzerning standart ptichkasini chiqaradi */
+    }
+
+    .check-label {
+        font-size: 1.1rem;
+        font-weight: 800;
+        color: #000;
+        cursor: pointer;
+    }
+
+    /* SECTION BOX */
+    .section-box {
+        background: #fff;
+        border: 2px solid #dee2e6;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .form-label {
+        font-weight: 800;
+        color: #000;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+</style>
+
+<div class="container-fluid">
+    <div class="pagetitle mb-4">
+        <h1 class="fw-bold text-dark">Mahsulot yaratish (Oziq-ovqat)</h1>
+    </div>
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="row">
+
+            <!-- CHAP TOMON: NOM VA TAVSIFLAR -->
+            <div class="col-lg-7">
+                <div class="section-box shadow-sm">
+                    <h5 class="fw-bold text-primary mb-3"><i class="bi bi-translate me-2"></i>Nomlar va tillar</h5>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Mahsulot nomi (UZB)</label>
+                            {{ form.name_uz }}
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Mahsulot nomi (RUS)</label>
+                            {{ form.name_ru }}
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Mahsulot nomi (ENG)</label>
+                            {{ form.name_en }}
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label text-danger">Mahsulot nomi (KOR)</label>
+                            {{ form.name_ko }}
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <h5 class="fw-bold text-primary mb-3"><i class="bi bi-card-text me-2"></i>Tavsiflar (Batafsil)</h5>
+                    <div class="mb-3">
+                        <label class="form-label">Tavsif (UZB)</label>
+                        {{ form.desc_uz }}
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Tavsif (RUS)</label>
+                        {{ form.desc_ru }}
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Tavsif (ENG)</label>
+                            {{ form.desc_en }}
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label text-danger">Tavsif (KOR)</label>
+                            {{ form.desc_ko }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- O'NG TOMON: NARX, STATUS, MEDIA -->
+            <div class="col-lg-5">
+                <div class="section-box shadow-sm">
+                    <h5 class="fw-bold text-primary mb-3"><i class="bi bi-cash-coin me-2"></i>Narx sozlamalari</h5>
+
+                    <div class="mb-3">
+                        <label class="form-label">Kategoriyani tanlang</label>
+                        {{ form.category }}
+                    </div>
+
+                    <div class="price-section">
+                        <div class="mb-3">
+                            <label class="form-label text-primary">Sotuv Narxi (so'm):</label>
+                            {{ form.new_price }}
+                        </div>
+
+                        <!-- MANA CHEGIRMA NARXI INPUTI -->
+                        <div class="mb-3">
+                            <label class="form-label text-danger">Chegirma Narxi (Eski narxi):</label>
+                            {{ form.discount_price }}
+                            <small class="text-muted">Chegirma bo'lsa to'ldiring, aks holda 0 qoldiring.</small>
+                        </div>
+
+                        <div class="mb-0">
+                            <label class="form-label text-success">B2B (Hamkor) Narxi:</label>
+                            {{ form.b2b_price }}
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <label class="form-label">Ombor qoldig'i</label>
+                            {{ form.available_quantity }}
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label">O'lchov turi</label>
+                            {{ form.measure }}
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <label class="form-label">Vazni (Kg)</label>
+                        {{ form.weight }}
+                    </div>
+                </div>
+
+                <!-- HOLATI (PTICHKA / CHECKBOX) -->
+                <!-- HOLATI (ANIQ PTICHKA / CHECKBOX) -->
+                <div class="section-box shadow-sm">
+                    <h5 class="fw-bold text-primary mb-3"><i class="bi bi-check2-square me-2"></i>Holati</h5>
+
+                    <div class="custom-check-container">
+                        <div class="check-item-card">
+                            <div class="form-check d-flex align-items-center">
+                                {{ form.active }}
+                                <label class="form-check-label ms-3" for="{{ form.active.id_for_label }}">
+                                    Sotuvda faol (Active)
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="check-item-card mt-2">
+                            <div class="form-check d-flex align-items-center">
+                                {{ form.main }}
+                                <label class="form-check-label ms-3" for="{{ form.main.id_for_label }}">
+                                    Asosiy sahifada ko'rinsin (Main)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MEDIA (RASM YUKLASH BLOKI) -->
+                <div class="section-box shadow-sm">
+                    <h5 class="fw-bold text-primary mb-3">Mahsulot rasmi</h5>
+                    <div class="p-3 border rounded bg-light border-dark">
+                        {{ form.image }} <!-- Bitta rasm yuklash uchun field -->
+                        <p class="small text-muted mt-2">Faqat bitta rasm (JPG, PNG) yuklang.</p>
+                    </div>
+                </div>
+
+                <!-- TUGMALAR -->
+                <div class="mt-4">
+                    <button type="submit" class="btn btn-primary btn-lg w-100 mb-2 shadow">
+                        <i class="bi bi-save me-2"></i>Mahsulotni saqlash
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary w-100" onclick="history.back()">
+                        Bekor qilish
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loyalty Admin Panel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: #f3f4f6; font-family: 'Inter', sans-serif; }
+        .card-shadow { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+    </style>
+</head>
+<body class="p-8">
+
+    <div class="max-w-7xl mx-auto">
+        <!-- Заголовок -->
+        <div class="flex justify-between items-center mb-8">
+            <div>
+                <h1 class="text-2xl font-bold text-gray-800">Управление Лояльностью</h1>
+                <p class="text-gray-500">Список пользователей и их бонусная активность</p>
+            </div>
+            <div class="flex gap-4">
+                <input type="text" placeholder="Поиск клиента..." class="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none">
+                <button class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">Обновить данные</button>
+            </div>
+        </div>
+
+        <!-- Таблица / Список -->
+        <div class="bg-white rounded-xl card-shadow overflow-hidden">
+            <table class="w-full text-left">
+                <thead class="bg-gray-50 border-b">
+                    <tr>
+                        <th class="px-6 py-4 text-xs font-semibold text-gray-500 uppercase">Клиент / Профиль</th>
+                        <th class="px-6 py-4 text-xs font-semibold text-gray-500 uppercase">Карта Лояльности</th>
+                        <th class="px-6 py-4 text-xs font-semibold text-gray-500 uppercase">Рефералы</th>
+                        <th class="px-6 py-4 text-xs font-semibold text-gray-500 uppercase">Последний Бонус</th>
+                        <th class="px-6 py-4 text-xs font-semibold text-gray-500 uppercase">Действия</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+
+                    <!-- Пример строки 1 -->
+                    <tr class="hover:bg-gray-50 transition">
+                        <td class="px-6 py-4">
+                            <div class="flex items-center">
+                                <div class="h-10 w-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-700 font-bold mr-3">
+                                    ИИ
+                                </div>
+                                <div>
+                                    <div class="text-sm font-medium text-gray-900">Иван Иванов</div>
+                                    <div class="text-xs text-gray-500">+7 999 123-45-67</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="px-6 py-4">
+                            <div class="text-sm text-gray-900 font-bold">5,450.00 ₽</div>
+                            <div class="text-xs text-gray-500">Цикл: 1 (до 25.03.2024)</div>
+                            <div class="w-24 h-1.5 bg-gray-200 rounded-full mt-1">
+                                <div class="w-1/2 h-1.5 bg-green-500 rounded-full"></div>
+                            </div>
+                        </td>
+                        <td class="px-6 py-4">
+                            <span class="px-2 py-1 bg-blue-50 text-blue-700 rounded text-xs font-mono">INVITE-2024</span>
+                            <div class="text-xs text-gray-500 mt-1"><i class="fa fa-users"></i> Пригласил: 3 чел.</div>
+                        </td>
+                        <td class="px-6 py-4">
+                            <div class="text-sm font-semibold text-green-600">+450 ₽</div>
+                            <div class="text-xs text-gray-500">Заказ: #5541 (10%)</div>
+                        </td>
+                        <td class="px-6 py-4">
+                            <button class="text-indigo-600 hover:text-indigo-900 text-sm font-medium">Детали</button>
+                        </td>
+                    </tr>
+
+                    <!-- Пример строки 2 -->
+                    <tr class="hover:bg-gray-50 transition">
+                        <td class="px-6 py-4">
+                            <div class="flex items-center">
+                                <div class="h-10 w-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-700 font-bold mr-3">
+                                    АС
+                                </div>
+                                <div>
+                                    <div class="text-sm font-medium text-gray-900">Анна Сидорова</div>
+                                    <div class="text-xs text-gray-500">+7 900 765-43-21</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="px-6 py-4">
+                            <div class="text-sm text-gray-900 font-bold">12,000.00 ₽</div>
+                            <div class="text-xs text-gray-500">Цикл: 3 (до 10.02.2024)</div>
+                            <div class="w-24 h-1.5 bg-gray-200 rounded-full mt-1">
+                                <div class="w-3/4 h-1.5 bg-indigo-500 rounded-full"></div>
+                            </div>
+                        </td>
+                        <td class="px-6 py-4">
+                            <span class="px-2 py-1 bg-blue-50 text-blue-700 rounded text-xs font-mono">ANNA-BONUS</span>
+                            <div class="text-xs text-gray-500 mt-1"><i class="fa fa-users"></i> Пригласила: 12 чел.</div>
+                        </td>
+                        <td class="px-6 py-4">
+                            <div class="text-sm font-semibold text-green-600">+1,200 ₽</div>
+                            <div class="text-xs text-gray-500">Заказ: #5590 (15%)</div>
+                        </td>
+                        <td class="px-6 py-4">
+                            <button class="text-indigo-600 hover:text-indigo-900 text-sm font-medium">Детали</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+    #main { padding: 20px !important; }
+    .sherah-adashboard, .sherah-body, .sherah-dsinner { padding: 0 !important; margin: 0 !important; }
+    .sherah-table__main { width: 100% !important; }
+    /* Search Bar Design */
+    .sherah-search-form { display: flex; align-items: center; background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 5px 15px; width: 300px; }
+    .sherah-search-form input { border: none; outline: none; padding: 5px; width: 100%; }
+</style>
+
+<div class="sherah-adashboard sherah-show">
+    <div class="sherah-body">
+        <div class="sherah-dsinner">
+            <div class="row">
+                <div class="col-12">
+                    <div class="sherah-breadcrumb mg-top-10 d-flex justify-content-between align-items-center">
+                        <div class="sherah-breadcrumb__left">
+                            <h2 class="sherah-breadcrumb__title">Kutilayotgan Bonuslar</h2>
+                            <ul class="sherah-breadcrumb__list">
+                                <li><a href="{% url 'dashboard' %}">Asosiy</a></li>
+                                <li class="active">Bonuslar</li>
+                            </ul>
+                        </div>
+                        <!-- SEARCH FORM -->
+                        <form action="" method="GET" class="sherah-search-form">
+                            <input type="text" name="q" placeholder="Mijoz yoki buyurtma..." value="{{ query }}">
+                            <button type="submit" style="background:none; border:none; color:#666;"><i class="bi bi-search"></i></button>
+                            {% if query %}<a href="?"><i class="bi bi-x-circle-fill text-danger ms-2"></i></a>{% endif %}
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sherah-table sherah-page-inner sherah-border sherah-default-bg mg-top-25">
+                <table class="sherah-table__main sherah-table__main-v3">
+                    <thead class="sherah-table__head">
+                        <tr>
+                            <th>Mijoz</th>
+                            <th>Buyurtma</th>
+                            <th>Summa</th>
+                            <th>Bonus %</th>
+                            <th>Status</th>
+                            <th>Amal</th>
+                        </tr>
+                    </thead>
+                    <tbody class="sherah-table__body">
+                        {% for bonus in bonuses %}
+                        <tr>
+                            <td><a href="{% url 'loyalty_customer_detail' bonus.profile.id %}" class="fw-bold">{{ bonus.profile.full_name }}</a></td>
+                            <td>{{ bonus.order_name }}</td>
+                            <td>{{ bonus.order_amount }} ₩</td>
+                            <td>
+                                {% if bonus.status == 'pending' %}
+                                <div class="input-group input-group-sm" style="width: 90px;">
+                                    <input type="number" name="percent" form="form-{{ bonus.id }}" class="form-control" value="10">
+                                    <span class="input-group-text">%</span>
+                                </div>
+                                {% else %}
+                                    <b class="text-success">+{{ bonus.bonus_amount }} ₩</b> ({{ bonus.percent }}%)
+                                {% endif %}
+                            </td>
+                            <td><span class="badge {% if bonus.status == 'approved' %}bg-success{% else %}bg-warning text-dark{% endif %}">{{ bonus.status }}</span></td>
+                            <td>
+                                {% if bonus.status == 'pending' %}
+                                <form action="{% url 'approve_bonus' bonus.id %}" method="POST" id="form-{{ bonus.id }}">
+                                    {% csrf_token %}<button type="submit" class="btn btn-sm btn-success">Tasdiqlash</button>
+                                </form>
+                                {% endif %}
+                            </td>
+                        </tr>
+                        {% empty %}
+                        <tr><td colspan="6" class="text-center p-5">Hech narsa topilmadi.</td></tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

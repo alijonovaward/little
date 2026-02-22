@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-body">
+            <!-- Recent Sales -->
+            <div class="col-12">
+              <div class="card recent-sales overflow-auto">
+
+                <div class="card-body">
+                  <h5 class="card-title">Ijtimoiy tarmoqlar</h5>
+                  <div class="col d-flex justify-content-end">
+                    <a href="{% url 'edit_media' socialmedias.id %}" class="btn btn-warning btn-xl">Tahrirlash</a>
+                </div>
+                  <table class="table">
+                      <thead>
+                          <tr>
+                              <th scope="col" rowspan="1" style="width: 50px; min-width: 50px;">#</th>
+                              <th scope="col" colspan="3" style="width: 100px; min-width: 100px;">Nomi</th>
+                              <th scope="col" colspan="8" style="width: 200px; min-width: 200px;">Link</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <th scope="row">1</th>
+                              <td colspan="3">Telegram</td>
+                              <td colspan="8">{{socialmedias.telegram|truncatechars:70|safe}}</td>
+
+                          </tr>
+                          <tr>
+                              <th scope="row">2</th>
+                              <td colspan="3">Instagram</td>
+                              <td colspan="8">{{socialmedias.instagram|safe|truncatechars:70}}</td>
+                          </tr>
+                          <tr>
+                              <th scope="row">3</th>
+                              <td colspan="3">Whatsapp</td>
+                              <td colspan="8">{{socialmedias.whatsapp|safe|truncatechars:70}}</td>
+
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td colspan="3">Telefon nomer</td>
+                            <td colspan="8">{{socialmedias.phone_number|safe|truncatechars:70}}</td>
+
+                        </tr>
+                        <tr>
+                          <th scope="row">5</th>
+                          <td colspan="3">IMO</td>
+                          <td colspan="8">{{socialmedias.imo|safe|truncatechars:70}}</td>
+
+                      </tr>
+                      <tr>
+                        <th scope="row">6</th>
+                        <td colspan="3">Kakao talk</td>
+                        <td colspan="8">{{socialmedias.kakao|safe|truncatechars:70}}</td>
+
+                    </tr>
+                    <tr>
+                      <th scope="row">7</th>
+                      <td colspan="3">Tiktok</td>
+                      <td colspan="8">{{socialmedias.tiktok|safe|truncatechars:70}}</td>
+
+                  </tr>
+                      </tbody>
+                  </table>
+              </div>
+              
+
+              </div>
+            </div><!-- End Recent Sales -->
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

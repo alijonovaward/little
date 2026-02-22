@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <form method="post">
+    <h1>{{bonus.title}} bonusini tahrirlash oynasi</h1>
+    {% csrf_token %}
+
+    <div class="row">
+      <div class="col-md-6">
+        {{ form.title.label_tag }}
+        {{ form.title }}
+        <br>
+        {{ form.amount.label_tag }}
+        {{ form.amount }}
+      </div>
+
+      <div class="col-md-6">
+        {{ form.percentage.label_tag }}
+        {{ form.percentage }}
+        <br>
+        <br>
+        {{ form.active.label_tag }}
+        {{ form.active }}
+      </div>
+    </div>
+
+  <style>
+    #id_delivery_fee {
+      width: 500px;
+    }
+  </style>
+  <br>
+  <button type="submit" class="btn btn-primary" name="edit">Saqlash</button>
+  <button type="button" class="btn btn-danger" onclick="goBack()">Ortga</button>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+<script>
+  document.getElementById('yourDeleteButtonId').addEventListener('click', function () {
+    $('#deleteConfirmModal').modal('show');
+  });
+</script>
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
+
+{% endblock %}

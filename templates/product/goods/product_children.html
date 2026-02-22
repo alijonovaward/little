@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% block content %}
+  {% load static %}
+  <!-- dashboard/child.html -->
+  <h1>{{ good.name_uz }} mahsut turlarini qo`shish oynasi</h1>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      {% if children %}
+        {% for child in children %}
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="{{ child.product.images.first.image.url }}" alt="{{ child.name_uz }}" class="bd-placeholder-img card-img-top" width="100%" height="225" role="img" aria-label="child Image" />
+              <div class="card-body">
+                <div class="child-details">
+                  <div class="info">
+                    <p class="card-title">Nome: {{ child.name_uz }}</p>
+                    <p class="card-title">Qoldiq: {{ child.product.available_quantity }} {{ child.product.get_measure_display }}</p>
+                  </div>
+                  {% if child.product.active %}
+                  <input type="checkbox"  class="disabled-checkbox" checked />
+                  {% else %}
+                  <input type="checkbox"  class="disabled-checkbox" />
+                  {% endif %}
+                </div>
+                
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <!-- Button to trigger the modal -->
+                    <button type="button" class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#deleteModal{{ child.id }}">O'chirish</button>
+
+                    {% if child.product.active %}
+                      <form method="post" action="{% url 'product-child-action' parent_pk=good.pk pk=child.pk %}">
+                        {% csrf_token %}
+                        <input type="hidden" name="action" value="toggle" />
+                        <button type="submit" class="btn btn-sm btn-outline-secondary">Berkitish</button>
+                      </form>
+                    {% else %}
+                      <form method="post" action="{% url 'product-child-action' parent_pk=good.pk pk=child.pk %}">
+                        {% csrf_token %}
+                        <input type="hidden" name="action" value="toggle" />
+                        <button type="submit" class="btn btn-sm btn-outline-success">Ko'rsatish</button>
+                      </form>
+                    {% endif %}
+                  </div>
+                  <small class="text-muted">{{ child.created|date:'d-m-Y' }}</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="deleteModal{{ child.id }}" tabindex="-1" aria-labelledby="deleteModalLabel{{ child.id }}" aria-hidden="true">
+            <div class="modal-dialog modal-top">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="deleteModalLabel{{ child.id }}">Tasdiqlash</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>"{{ child.name_uz }}" childni o'chirishni hohlaysizmi?</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bekor qilish</button>
+                  <form method="post" action="{% url 'product-child-action' parent_pk=good.pk pk=child.pk %}">
+                    {% csrf_token %}
+                    <input type="hidden" name="action" value="delete" />
+                    <button type="submit" class="btn btn-danger">Tasdiqlash</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      {% else %}
+        <p>Bu toifadagi mahsulotlar kiritilmagan</p>
+      {% endif %}
+    </div>
+    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#createchildModal">child yaratish</button>
+
+    <!-- Modal for creating new childs -->
+    <div class="modal fade" id="createchildModal" tabindex="-1" aria-labelledby="createchildModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="createchildModalLabel">Yangi child yaratish</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form method="post" enctype="multipart/form-data" action="{% url 'add_product_child' good.pk %}">
+              {% csrf_token %}
+              {{ form.as_p }}
+              <button type="submit" class="btn btn-primary">Saqlash</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bekor qilish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

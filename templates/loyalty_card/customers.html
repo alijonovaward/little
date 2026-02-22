@@ -1,0 +1,250 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Faqat surilishni to'g'irlash uchun kichik reset -->
+<style>
+    /* NiceAdmin ichida Sherah dizayni surilmasligi uchun */
+    #main {
+        padding: 20px !important;
+    }
+    .sherah-adashboard {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .sherah-body {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    /* Container o'ngga surib yubormasligi uchun fluid qilamiz */
+    .sherah-dsinner {
+        padding: 0 !important;
+    }
+</style>
+
+<section class="sherah-adashboard sherah-show">
+    <!-- container'ni container-fluid qilsangiz surilish to'xtaydi -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="sherah-body">
+                    <!-- Dashboard Inner -->
+                    <div class="sherah-dsinner">
+                        <div class="row mg-top-30">
+                            <div class="col-12 sherah-flex-between">
+                                <!-- Sherah Breadcrumb -->
+                                <div class="sherah-breadcrumb">
+                                    <h2 class="sherah-breadcrumb__title">Mijoz Loyallik Profili</h2>
+                                    <ul class="sherah-breadcrumb__list">
+                                        <li><a href="{% url 'dashboard' %}">Bosh sahifa</a></li>
+                                        <li class="active"><a href="#">{{ profile.full_name }}</a></li>
+                                    </ul>
+                                </div>
+                                <!-- End Sherah Breadcrumb -->
+                                <a href="{% url 'loyalty_customer_list' %}" class="sherah-btn sherah-gbcolor">Ro'yxatga
+                                    qaytish</a>
+                            </div>
+                        </div>
+
+                        <div class="sherah-page-inner sherah-border sherah-default-bg mg-top-25 pt-0">
+                            <div class="row">
+                                <!-- CHAP TOMON: Loyalty Card & Profile Summary -->
+                                <div class="col-lg-4 col-12 mg-top-30">
+                                    <div class="sherah-upcard">
+                                        <div class="sherah-upcard__thumb">
+                                            {% if profile.avatar %}
+                                            <img src="{{ profile.avatar.url }}" alt="{{ profile.full_name }}">
+                                            {% else %}
+                                            <img src="{% static 'assets/img/customer_logo.jpg' %}" alt="default">
+                                            {% endif %}
+                                        </div>
+                                        <div class="sherah-upcard__heading">
+                                            <h3 class="sherah-upcard__title">{{ profile.full_name }}</h3>
+                                            <p class="sherah-upcard__phone">{{ profile.phone_number }}</p>
+                                            <p class="sherah-upcard__email">
+                                                <a href="mailto:{{ profile.user.email }}">{{ profile.user.email }}</a>
+                                            </p>
+                                        </div>
+
+                                        <!-- LoyaltyCard: Balans -->
+                                        <div class="sherah-upcard__balance sherah-default-bg sherah-border">
+                                            Balans: {{ profile.loyalty_card.current_balance|default:"0" }} ₩
+                                        </div>
+
+                                        <ul class="sherah-upcard__list mg-top-40">
+                                            <li>
+                                                <b>Tsikl holati:</b>
+                                                <span>{{ profile.loyalty_card.cycle_number }}-chi tsikl</span>
+                                            </li>
+                                            <li>
+                                                <b>Tsikl tugashi:</b>
+                                                <span class="text-danger">{{ profile.loyalty_card.cycle_end|date:"d M, Y" }}</span>
+                                            </li>
+                                            <li>
+                                                <b>Amaldagi kunlar:</b>
+                                                <span>{{ profile.loyalty_card.cycle_days }} kun</span>
+                                            </li>
+                                            <li>
+                                                <b>Karta ochilgan:</b>
+                                                <span>{{ profile.loyalty_card.created_at|date:"d.m.Y" }}</span>
+                                            </li>
+                                        </ul>
+                                        <div class="mg-top-30">
+                                            <a href="{% url 'edit_loyalty_card' profile.id %}" class="btn btn-primary w-100"
+                                               style="border-radius: 8px; background-color: #4154f1; border: none;">
+                                                <i class="bi bi-pencil-square"></i> Kartani tahrirlash
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- O'NG TOMON: Bonuslar va Referallar -->
+                                <div class="col-lg-8 col-12 mg-top-30">
+                                    <div class="sherah-table__head sherah-table__main">
+                                        <h4 class="sherah-order-title">Kutilayotgan Bonuslar (Order History)</h4>
+
+                                    </div>
+                                    <div class="sherah-table p-0">
+                                        <table class="sherah-table__main sherah-table__main-v3">
+                                            <thead class="sherah-table__head">
+                                            <tr>
+                                                <th class="sherah-table__column-1">Order</th>
+                                                <th class="sherah-table__column-2">Summa</th>
+                                                <th class="sherah-table__column-3">Bonus</th>
+                                                <th class="sherah-table__column-4">Status</th>
+                                                <th class="sherah-table__column-5">Amal</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody class="sherah-table__body">
+                                            {% for bonus in pending_bonuses %}
+                                            <tr>
+                                                <!-- Buyurtma raqami va nomi -->
+                                                <td class="sherah-table__column-1">
+                                                    <div class="sherah-table__product--id">
+                                                        <p class="crany-table__product--number">
+                                                            <a href="#" class="sherah-color1">#{{ bonus.order.id }}</a>
+                                                        </p>
+                                                    </div>
+                                                    <small>{{ bonus.order_name }}</small>
+                                                </td>
+
+                                                <!-- Buyurtma summasi -->
+                                                <td class="sherah-table__column-2">
+                                                    <div class="sherah-table__product-content">
+                                                        <p class="sherah-table__product-desc">{{ bonus.order_amount }}
+                                                            ₩</p>
+                                                    </div>
+                                                </td>
+
+                                                <!-- BONUS QISMI (Foiz kiritish) -->
+                                                <td class="sherah-table__column-3">
+                                                    <div class="sherah-table__product-content">
+                                                        {% if bonus.status == 'pending' %}
+                                                        <div class="input-group input-group-sm" style="width: 110px;">
+                                                            <!-- 'form' atributi orqali pastdagi formaga biriktiramiz -->
+                                                            <input type="number" name="percent"
+                                                                   form="form-{{ bonus.id }}"
+                                                                   class="form-control" value="10" min="1" max="100"
+                                                                   required>
+                                                            <span class="input-group-text">%</span>
+                                                        </div>
+                                                        {% else %}
+                                                        <p class="sherah-table__product-desc">
+                                                            <b class="text-success">+{{ bonus.bonus_amount }} ₩</b><br>
+                                                            <small class="text-muted">({{ bonus.percent }}%)</small>
+                                                        </p>
+                                                        {% endif %}
+                                                    </div>
+                                                </td>
+
+                                                <!-- STATUS QISMI -->
+                                                <td class="sherah-table__column-4">
+                                                    <div class="sherah-table__product-content">
+                                                        {% if bonus.status == 'approved' %}
+                                                        <span class="badge bg-success" style="padding: 5px 10px;">Tasdiqlangan</span>
+                                                        {% else %}
+                                                        <span class="badge bg-warning text-dark"
+                                                              style="padding: 5px 10px;">Kutilmoqda</span>
+                                                        {% endif %}
+                                                    </div>
+                                                </td>
+
+                                                <!-- AMAL QISMI (Tugma va Forma) -->
+                                                <td class="sherah-table__column-5">
+                                                    {% if bonus.status == 'pending' %}
+                                                    <!-- Forma faqat shu yerda, lekin tepadagi input bunga 'form' ID orqali bog'langan -->
+                                                    <form action="{% url 'approve_bonus' bonus.id %}" method="POST"
+                                                          id="form-{{ bonus.id }}">
+                                                        {% csrf_token %}
+                                                        <button type="submit" class="btn btn-sm btn-outline-success">
+                                                            <i class="bi bi-check-circle"></i> Tasdiqlash
+                                                        </button>
+                                                    </form>
+                                                    {% else %}
+                                                    <button class="btn btn-sm btn-light" disabled>Bajarildi</button>
+                                                    {% endif %}
+                                                </td>
+                                            </tr>
+                                            {% endfor %}
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="row mg-top-30">
+                                        <!-- Account Details -->
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="sherah-accounts-card sherah-border sherah-default-bg">
+                                                <div class="sherah-accounts-card__header sherah-border-btm">
+                                                    <h3 class="sherah-accounts-card__title">Profil tafsilotlari</h3>
+                                                </div>
+                                                <div class="sherah-accounts-card__body p-3">
+                                                    <ul class="sherah-accounts-card__list">
+                                                        <li>ID: <span>#{{ profile.id }}</span></li>
+                                                        <li>Username: <span>{{ profile.user.username }}</span></li>
+                                                        <li>Ro'yxatdan o'tdi: <span>{{ profile.created_at|date:"d.m.Y" }}</span>
+                                                        </li>
+                                                        <li>Loyallik holati: <span>Active</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Referral System -->
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="sherah-accounts-card sherah-border sherah-default-bg">
+                                                <div class="sherah-accounts-card__header sherah-border-btm">
+                                                    <h3 class="sherah-accounts-card__title">Taklif qilinganlar
+                                                        (Referrals)</h3>
+                                                </div>
+                                                <div class="sherah-accounts-card__body p-3">
+                                                    <ul class="sherah-accounts-card__list">
+                                                        {% for ref in referrals %}
+                                                        <li class="d-flex justify-content-between align-items-center mb-2">
+                                                            <span>{{ ref.referee.full_name }}</span>
+                                                            {% if ref.status == 'rewarded' %}
+                                                            <span class="badge bg-success">Mukofotlandi</span>
+                                                            {% elif ref.status == 'pending' %}
+                                                            <span class="badge bg-warning text-dark">Kutilmoqda</span>
+                                                            {% else %}
+                                                            <span class="badge bg-danger">Muddati o'tgan</span>
+                                                            {% endif %}
+                                                        </li>
+                                                        {% empty %}
+                                                        <li class="text-muted">Hali hech kim taklif qilinmagan</li>
+                                                        {% endfor %}
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

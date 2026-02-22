@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-body">
+            <!-- Recent Sales -->
+            <div class="col-12">
+              <div class="card recent-sales overflow-auto">
+
+                <div class="card-body">
+                  <h5 class="card-title">Ma'lumotlar</h5>
+                  {% for info in infos%}
+                 
+                  <table class="table">
+                      <thead>
+                          <tr>
+                              <th scope="col" rowspan="1" style="width: 50px; min-width: 50px;">#</th>
+                              <th scope="col" colspan="3" style="width: 100px; min-width: 100px;">Nomi</th>
+                              <th scope="col" colspan="6" style="width: 200px; min-width: 200px;">Tasnifi</th>
+                              <th scope="col" colspan="2" style="width: 200px; min-width: 200px;">Tahrirlash</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <th scope="row">1</th>
+                              <td colspan="3">Eslatma</td>
+                              <td colspan="6">{{info.reminder_uz|truncatechars:70|safe}}</td>
+                              <td> <a href="{% url 'edit_reminder' info.id %}" class="btn btn-primary btn-sm">Tahrirlash</a></td>
+
+                          </tr>
+                          <tr>
+                              <th scope="row">2</th>
+                              <td colspan="3">Kelishuv</td>
+                              <td colspan="6">{{info.agreement_uz|safe|truncatechars:70}}</td>
+                              <td> <a href="{% url 'edit_agreement' info.id %}" class="btn btn-primary btn-sm">Tahrirlash</a></td>
+                          </tr>
+                          <tr>
+                              <th scope="row">3</th>
+                              <td colspan="3">Yetkazish shartlari</td>
+                              <td colspan="6">{{info.shipment_terms_uz|safe|truncatechars:70}}</td>
+                              <td> <a href="{% url 'edit_shipment' info.id %}" class="btn btn-primary btn-sm">Tahrirlash</a></td>
+
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td colspan="3">Offerta shartlari</td>
+                            <td colspan="6">{{info.privacy_policy_uz|safe|truncatechars:70}}</td>
+                            <td> <a href="{% url 'edit_privacy' info.id %}" class="btn btn-primary btn-sm">Tahrirlash</a></td>
+
+                        </tr>
+                        <tr>
+                          <th scope="row">5</th>
+                          <td colspan="3">Biz haqimizda</td>
+                          <td colspan="6">{{info.about_us_uz|safe|truncatechars:70}}</td>
+                          <td> <a href="{% url 'edit_aboutus' info.id %}" class="btn btn-primary btn-sm">Tahrirlash</a></td>
+
+                      </tr>
+                      <tr>
+                        <th scope="row">6</th>
+                        <td colspan="3">Qollab quvvatlash markazi</td>
+                        <td colspan="6">{{info.support_center_uz|safe|truncatechars:100}}</td>
+                        <td> <a href="{% url 'edit_support' info.id %}" class="btn btn-primary btn-sm">Tahrirlash</a></td>
+
+                    </tr><tr>
+                      <th scope="row">7</th>
+                      <td colspan="3">Hisob raqam/Pul o'tkazish shartlari</td>
+                      <td colspan="6">{{info.payment_data_uz|safe|truncatechars:70}}</td>
+                      <td> <a href="{% url 'edit_payment' info.id %}" class="btn btn-primary btn-sm">Tahrirlash</a></td>
+
+                  </tr>
+                    {% endfor %}
+                      </tbody>
+                  </table>
+              </div>
+              
+
+              </div>
+            </div><!-- End Recent Sales -->
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

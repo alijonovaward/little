@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center">
+          <h5 class="card-title">Barcha buyurtmalari ro'yhati</h5>
+        </div>
+
+        <form method="get" class="mb-3">
+            <div class="input-group">
+                <input type="text" class="form-control small-input" name="q" value="{{ request.GET.q }}" placeholder="Izlash..." />
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="submit">Qidirish</button>
+                </div>
+            </div>
+        </form>
+        <!-- Recent Sales -->
+        <div class="col-12">
+          <div class="card recent-sales overflow-auto">
+            <div class="card-body">
+              <h5 class="card-title">Buyurtmalar<span>| all</span></h5>
+              <table class="table table-borderless table">
+                <thead>
+                  <tr>
+                    <th scope="col" class="text-center">#</th>
+                    <th scope="col" class="text-center">Foydalanuvchi</th>
+                    <th scope="col" class="text-center">Sana</th>
+                    <th scope="col" class="text-center">Manzil</th>
+                    <th scope="col" class="text-center">Umumiy narx</th>
+                    <th scope="col" class="text-center">Izoh</th>
+                    <th scope="col" class="text-center">Holati</th>
+                    <th scope="col" class="text-center">Batafsil</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for c in orders %}
+                  <tr>
+                    <th scope="row" class="text-center">{{c.id}}</th>
+                    <th class="text-center">{{c.user.full_name}}</th>
+                    <td class="text-center">
+                      <i class="bi bi-calendar-date"></i> {{ c.created|date:"d-m-Y" }} <br>
+                      <i class="bi bi-clock"></i> {{ c.created|date:"H:i" }}
+                    </td>
+                    <td class="text-center">
+                      {% if c.user.location.exists %}
+                      {{ c.user.location.first.address }}
+                      {% else %}
+                      <span class="text-muted">No location available</span>
+                      {% endif %}
+                    </td>
+                    <td class="text-center">{{c.total_amount}} ₩</td>
+                    <td class="text-center">{{c.comment}}</td>
+                    <td class="text-center">
+                      <form method="post" action="{% url 'update-order-status' c.id %}">
+                        {% csrf_token %}
+                        <div class="input-group">
+                            <select name="status" class="form-select" style="color:white; background-color: 
+                                {% if c.status == 'in_cart' %}gray;
+                                {% elif c.status == 'cancelled' %}red;
+                                {% elif c.status == 'pending' %}orange;
+                                {% elif c.status == 'approved' %}blue;
+                                {% elif c.status == 'sent' %}green;
+                                {% endif %}" onchange="this.form.submit()">
+                                
+                                <optgroup label="Buyurtma holati">
+                                    {% for choice_value, choice_label in c.STATUS_CHOICES %}
+                                        {% if choice_value != 'in_cart' %}
+                                            <option style="color: white;" value="{{ choice_value }}" {% if c.status == choice_value %}selected{% endif %}>
+                                                {{ choice_label }}
+                                            </option>
+                                        {% endif %}
+                                    {% endfor %}
+                                </optgroup>
+                                
+                            </select>
+                        </div>
+                    </form>
+                  </td>
+                    <td class="text-center">
+                      <a href="{% url 'user-order-detail' c.id %}">
+                        <i class="bi bi-receipt" style="font-size: 2em;"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+               <!-- Pagination controls -->
+          <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+              {% if page_obj.has_previous %}
+                <li class="page-item">
+                  <a class="page-link" href="?page=1" aria-label="First">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="?page={{ page_obj.previous_page_number }}" aria-label="Previous">
+                    <span aria-hidden="true">&lsaquo;</span>
+                  </a>
+                </li>
+              {% endif %}
+              <li class="page-item active" aria-current="page">
+                <span class="page-link">
+                  {{ page_obj.number }}
+                  <span class="sr-only">(current)</span>
+                </span>
+              </li>
+              {% if page_obj.has_next %}
+                <li class="page-item">
+                  <a class="page-link" href="?page={{ page_obj.next_page_number }}" aria-label="Next">
+                    <span aria-hidden="true">&rsaquo;</span>
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="?page={{ page_obj.paginator.num_pages }}" aria-label="Last">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              {% endif %}
+            </ul>
+          </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
+{% endblock %}

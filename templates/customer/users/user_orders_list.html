@@ -1,0 +1,207 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+    #main { padding: 20px !important; }
+
+    /* Google Sheets uslubidagi qat'iy dizayn */
+    .sheets-wrapper {
+        background: #fff;
+        border: 1px solid #cbd5e1;
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .sheets-table {
+        width: 100%;
+        border-collapse: collapse !important;
+    }
+
+    /* Sarlavha */
+    .sheets-table thead th {
+        background-color: #f8fafc !important;
+        color: #475569 !important;
+        font-weight: 600 !important;
+        font-size: 13px !important;
+        padding: 10px 15px !important;
+        border: 1px solid #cbd5e1 !important;
+        text-align: center;
+    }
+
+    /* Katakchalar */
+    .sheets-table tbody td {
+        padding: 8px 12px !important;
+        border: 1px solid #e2e8f0 !important;
+        font-size: 13px;
+        color: #1e293b;
+        vertical-align: middle;
+    }
+
+    .sheets-table tbody tr:hover {
+        background-color: #f1f5f9 !important;
+    }
+
+    /* Excel ID ustuni */
+    .col-id { background: #f1f5f9; font-weight: bold; width: 50px; text-align: center; color: #64748b; }
+    .col-order-num { font-weight: 700; color: #2563eb; font-family: 'Courier New', Courier, monospace; }
+
+    /* Status Dropdown dizayni */
+    .status-select {
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border: 1px solid #cbd5e1;
+        cursor: pointer;
+        width: 100%;
+        outline: none;
+    }
+
+    /* Status ranglari */
+    .sel-pending { background-color: #fef9c3; color: #854d0e; }
+    .sel-payment { background-color: #dbeafe; color: #1e40af; }
+    .sel-approved { background-color: #dcfce7; color: #166534; }
+    .sel-sent { background-color: #ede9fe; color: #5b21b6; }
+    .sel-cancel { background-color: #fee2e2; color: #991b1b; }
+
+    /* Tugma stili */
+    .btn-save-status {
+        padding: 4px 8px;
+        font-size: 12px;
+        background-color: #10b981;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 5px;
+    }
+    .btn-save-status:hover { background-color: #059669; }
+
+    .action-btns { display: flex; align-items: center; justify-content: center; gap: 5px; }
+</style>
+
+<section class="sherah-adashboard">
+    <div class="sherah-body">
+        <div class="sherah-dsinner">
+            <!-- Breadcrumb & Search -->
+            <div class="row mg-top-10">
+                <div class="col-12 d-flex justify-content-between align-items-center">
+                    <div>
+                        <h2 class="sherah-breadcrumb__title">Buyurtmalar Ro'yxati</h2>
+                        <ul class="sherah-breadcrumb__list">
+                            <li><a href="{% url 'dashboard' %}">Asosiy</a></li>
+                            <li class="active">Barcha buyurtmalar</li>
+                        </ul>
+                    </div>
+
+                    <div class="sherah-breadcrumb__search">
+                        <form action="" method="GET" class="d-flex" style="background: #fff; border: 1px solid #cbd5e1; border-radius: 6px; padding: 2px 10px;">
+                            <input type="text" name="q" placeholder="Qidirish..." value="{{ request.GET.q|default:'' }}" style="border:none; outline:none; padding: 8px;">
+                            <button type="submit" style="background:none; border:none;"><i class="bi bi-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JADVAL -->
+            <div class="sheets-wrapper mg-top-20">
+                <div class="table-responsive">
+                    <table class="sheets-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Buyurtma #</th>
+                                <th>Mijoz</th>
+                                <th>Sana</th>
+                                <th>Manzil</th>
+                                <th style="width: 200px;">Holati (O'zgartirish)</th>
+                                <th>Amal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for c in orders %}
+                            <tr>
+                                <td class="col-id">{{ c.id }}</td>
+                                <td class="text-center col-order-num">{{ c.order_number|default:"-" }}</td>
+                                <td class="fw-bold">{{ c.user.full_name }}</td>
+                                <td class="text-center">{{ c.created_at|date:"d.m.Y H:i" }}</td>
+                                <td class="small" title="{{ c.location.address }}">
+                                    <div style="max-width: 180px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                        {{ c.location.address|default:"-" }}
+                                    </div>
+                                </td>
+                                <td>
+                                    <!-- Statusni o'zgartirish formasi -->
+                                    <form action="{% url 'order-update-status' c.id %}" method="POST" class="d-flex align-items-center">
+                                        {% csrf_token %}
+                                        <select name="status" class="status-select
+                                            {% if c.status == 'pending' %}sel-pending
+                                            {% elif c.status == 'payment_pending' %}sel-payment
+                                            {% elif c.status == 'approved' %}sel-approved
+                                            {% elif c.status == 'sent' %}sel-sent
+                                            {% elif c.status == 'cancelled' %}sel-cancel{% endif %}"
+                                            onchange="this.className='status-select ' + getStatusClass(this.value)">
+                                            <option value="pending" {% if c.status == 'pending' %}selected{% endif %}>TASDIQ KUTILMOQDA</option>
+                                            <option value="payment_pending" {% if c.status == 'payment_pending' %}selected{% endif %}>TO'LOV KUTILMOQDA</option>
+                                            <option value="approved" {% if c.status == 'approved' %}selected{% endif %}>TASDIQLANDI</option>
+                                            <option value="sent" {% if c.status == 'sent' %}selected{% endif %}>YUBORILDI</option>
+                                            <option value="cancelled" {% if c.status == 'cancelled' %}selected{% endif %}>BEKOR QILINDI</option>
+                                        </select>
+                                        <button type="submit" class="btn-save-status" title="Saqlash">
+                                            <i class="bi bi-check-lg"></i>
+                                        </button>
+                                    </form>
+                                </td>
+                                <td class="text-center">
+                                    <div class="action-btns">
+                                        <a href="{% url 'user-order-detail' c.id %}" class="btn btn-sm btn-outline-primary" style="padding: 2px 8px;">
+                                            <i class="bi bi-eye"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            {% empty %}
+                            <tr>
+                                <td colspan="7" class="text-center p-4">Ma'lumot topilmadi.</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            {% if page_obj.has_other_pages %}
+            <div class="mg-top-20 d-flex justify-content-center">
+                <nav>
+                    <ul class="pagination pagination-sm">
+                        {% if page_obj.has_previous %}
+                            <li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">Oldingi</a></li>
+                        {% endif %}
+                        <li class="page-item active"><span class="page-link">{{ page_obj.number }}</span></li>
+                        {% if page_obj.has_next %}
+                            <li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">Keyingi</a></li>
+                        {% endif %}
+                    </ul>
+                </nav>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+<script>
+    // Tanlov o'zgarganda rangni ham o'zgartirish uchun kichik funksiya
+    function getStatusClass(val) {
+        if (val === 'pending') return 'sel-pending';
+        if (val === 'payment_pending') return 'sel-payment';
+        if (val === 'approved') return 'sel-approved';
+        if (val === 'sent') return 'sel-sent';
+        if (val === 'cancelled') return 'sel-cancel';
+        return '';
+    }
+</script>
+{% endblock %}

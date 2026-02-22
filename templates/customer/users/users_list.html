@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Surilishni majburiy to'g'irlash uchun CSS -->
+<style>
+    #main {
+        padding: 20px !important;
+        transition: all 0.3s;
+    }
+
+    .sherah-adashboard {
+        padding: 0 !important;
+        margin: 0 !important;
+        background: transparent !important;
+    }
+
+    .sherah-breadcrumb__search input {
+        border: 2px solid #343a40 !important; /* Input ko'rinishi uchun */
+    }
+
+    /* Pagination dizayni */
+    .pagination .page-link {
+        color: #4154f1;
+        border: 1px solid #dee2e6;
+    }
+    .pagination .page-item.active .page-link {
+        background-color: #4154f1;
+        border-color: #4154f1;
+        color: white;
+    }
+</style>
+
+<section class="sherah-adashboard sherah-show">
+    <div class="sherah-body">
+        <div class="sherah-dsinner">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Breadcrumb va Search Section -->
+                    <div class="sherah-breadcrumb mg-top-10 d-flex justify-content-between align-items-center">
+                        <div class="sherah-breadcrumb__left">
+                            <h2 class="sherah-breadcrumb__title" style="margin: 0;">Foydalanuvchilar</h2>
+                            <ul class="sherah-breadcrumb__list">
+                                <li><a href="{% url 'dashboard' %}">Asosiy</a></li>
+                                <li class="active"><a href="#">Foydalanuvchilar ro'yxati</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Qidiruv formasi -->
+                        <div class="sherah-breadcrumb__search">
+                            <form action="" method="GET" style="display: flex; align-items: center; background: #fff; border: 2px solid #343a40; border-radius: 8px; padding: 5px 15px;">
+                                <input type="text" name="q" placeholder="Qidirish..." value="{{ request.GET.q|default:'' }}" style="border: none; outline: none; padding: 5px; width: 200px;">
+                                <button type="submit" style="background: none; border: none; color: #666;"><i class="bi bi-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foydalanuvchilar Jadvali -->
+            <div class="sherah-table sherah-page-inner sherah-border sherah-default-bg mg-top-25">
+                <table class="sherah-table__main sherah-table__main-v3">
+                    <thead class="sherah-table__head">
+                        <tr>
+                            <th class="text-center"># ID</th>
+                            <th class="sherah-table__column-1">Foydalanuvchi</th>
+                            <th class="text-center">Telefon</th>
+                            <th class="text-center">Buyurtmalar</th>
+                            <th class="text-center">Qo'shilgan sana</th>
+                            <th class="text-center">Amal</th>
+                        </tr>
+                    </thead>
+                    <tbody class="sherah-table__body">
+                        {% for profile in users %}
+                        <tr>
+                            <td class="text-center">
+                                <span class="fw-bold">#{{ profile.id }}</span>
+                            </td>
+                            <td class="sherah-table__column-1">
+                                <div class="sherah-table__product">
+                                    <div class="sherah-table__vendor-img">
+                                        <img src="{% static 'assets/img/customer_logo.jpg' %}" alt="#" class="rounded-circle">
+                                    </div>
+                                    <h4 class="sherah-table__vendor--title">
+                                        <a href="{% url 'user-orders-list' profile.id %}">{{ profile.full_name }}</a>
+                                    </h4>
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <span>{{ profile.phone_number }}</span>
+                            </td>
+                            <td class="text-center">
+                                <span class="badge bg-info text-dark" style="font-size: 0.9rem;">
+                                    {{ profile.order.count }} ta
+                                </span>
+                            </td>
+                            <td class="text-center">
+                                <div class="small">
+                                    <i class="bi bi-calendar-date"></i> {{ profile.created_at|date:'d-m-Y' }}<br>
+                                    <i class="bi bi-clock"></i> {{ profile.created_at|date:'H:i' }}
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <a href="{% url 'user-orders-list' profile.id %}" class="btn btn-sm" style="background: rgba(65, 84, 241, 0.1); color: #4154f1; border-radius: 6px;">
+                                    <i class="bi bi-journal-text" style="font-size: 1.2rem;"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        {% empty %}
+                        <tr>
+                            <td colspan="6" class="text-center p-5">Foydalanuvchilar topilmadi.</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination (Sherah uslubida) -->
+            <div class="row mg-top-30">
+                <div class="col-12">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-center">
+                            {% if page_obj.has_previous %}
+                            <li class="page-item">
+                                <a class="page-link" href="?page=1{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">&laquo;</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="?page={{ page_obj.previous_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">&lsaquo;</a>
+                            </li>
+                            {% endif %}
+
+                            <li class="page-item active">
+                                <span class="page-link">{{ page_obj.number }}</span>
+                            </li>
+
+                            {% if page_obj.has_next %}
+                            <li class="page-item">
+                                <a class="page-link" href="?page={{ page_obj.next_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">&rsaquo;</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="?page={{ page_obj.paginator.num_pages }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">&raquo;</a>
+                            </li>
+                            {% endif %}
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock %}

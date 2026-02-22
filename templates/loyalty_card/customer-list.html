@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Surilishni majburiy to'g'irlash uchun CSS -->
+<style>
+    /* NiceAdmin ichidagi #main kontentini Sherah klasslari bilan tekislash */
+    #main {
+        padding: 20px !important; /* NiceAdmin'ning standart paddingi */
+        margin-left: 300px; /* Sidebar kengligi (agar sidebar yopiq bo'lsa buni NiceAdmin o'zi boshqaradi) */
+        transition: all 0.3s;
+    }
+
+    /* Sidebar yopilganda main kontent surilishi uchun (NiceAdmin klassi) */
+    @media (max-width: 1199px) {
+        #main { margin-left: 0; }
+    }
+
+    .sherah-adashboard {
+        padding: 0 !important;
+        margin: 0 !important;
+        background: transparent !important;
+    }
+
+    .sherah-body {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* Kontentni chapga taqash */
+    .sherah-dsinner {
+        padding: 0 !important;
+    }
+
+    /* Qidiruv formasi va Breadcrumb tekisligi */
+    .sherah-flex-between {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .sherah-breadcrumb__search {
+        margin-right: 0;
+    }
+
+    /* Jadval kengligi */
+    .sherah-table__main {
+        width: 100% !important;
+    }
+</style>
+
+<section class="sherah-adashboard sherah-show">
+    <!-- Container klassini Olib tashladik (bu o'ngga surayotgan edi) -->
+    <div class="sherah-body">
+        <div class="sherah-dsinner">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Breadcrumb va Search Section -->
+                    <div class="sherah-breadcrumb mg-top-10 sherah-flex-between">
+                        <div class="sherah-breadcrumb__left">
+                            <h2 class="sherah-breadcrumb__title" style="margin: 0;">Sodiqlik Kartalari</h2>
+                            <ul class="sherah-breadcrumb__list">
+                                <li><a href="{% url 'dashboard' %}">Asosiy</a></li>
+                                <li class="active"><a href="#">Mijozlar Balansi</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Qidiruv formasi -->
+                        <div class="sherah-breadcrumb__search">
+                            <form action="{% url 'loyalty_customer_list' %}" method="GET" style="display: flex; align-items: center; background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 5px 15px;">
+                                <input type="text" name="q" placeholder="Mijozni qidirish..." value="{{ query|default:'' }}" style="border: none; outline: none; padding: 5px; width: 250px;">
+                                <button type="submit" style="background: none; border: none; color: #666;"><i class="bi bi-search"></i></button>
+                                {% if query %}
+                                    <a href="{% url 'loyalty_customer_list' %}" style="margin-left: 10px; color: #ff4d4d;"><i class="bi bi-x-circle-fill"></i></a>
+                                {% endif %}
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mijozlar Jadvali -->
+            <div class="sherah-table sherah-page-inner sherah-border sherah-default-bg mg-top-25">
+                <table id="sherah-table__vendor" class="sherah-table__main sherah-table__main-v3">
+                    <thead class="sherah-table__head">
+                        <tr>
+                            <th class="sherah-table__column-1 sherah-table__h2">Mijoz</th>
+                            <th class="sherah-table__column-3 sherah-table__h4">Balans</th>
+                            <th class="sherah-table__column-4 sherah-table__h5">Tsikl</th>
+                            <th class="sherah-table__column-5 sherah-table__h6">Status</th>
+                            <th class="sherah-table__column-7 sherah-table__h8">Yaratilgan</th>
+                            <th class="sherah-table__column-9 sherah-table__h9">Amal</th>
+                        </tr>
+                    </thead>
+                    <tbody class="sherah-table__body">
+                        {% for profile in profiles %}
+                        <tr>
+                            <td class="sherah-table__column-1">
+                                <div class="sherah-table__product">
+                                    <div class="sherah-table__vendor-img">
+                                        <img src="{% static 'assets/img/customer_logo.jpg' %}" alt="#">
+                                    </div>
+                                    <h4 class="sherah-table__vendor--title">
+                                        <a href="{% url 'loyalty_customer_detail' profile.id %}">{{ profile.full_name }}</a>
+                                    </h4>
+                                </div>
+                            </td>
+                            <td class="sherah-table__column-3">
+                                <div class="sherah-table__product-content">
+                                    <p class="sherah-table__product-desc"><b class="text-success">{{ profile.loyalty_card.current_balance|default:"0" }} ₩</b></p>
+                                </div>
+                            </td>
+                            <td class="sherah-table__column-4">
+                                <div class="sherah-table__product-content">
+                                    <p class="sherah-table__product-desc">#{{ profile.loyalty_card.cycle_number|default:"1" }}</p>
+                                </div>
+                            </td>
+                            <td class="sherah-table__column-5">
+                                <div class="sherah-table__status sherah-color3 sherah-color3__bg--opactity">
+                                    Active
+                                </div>
+                            </td>
+                            <td class="sherah-table__column-6">
+                                <div class="sherah-table__product-content">
+                                    <p class="sherah-table__product-desc">{{ profile.loyalty_card.cycle_start|date:'d F Y' }}</p>
+                                </div>
+                            </td>
+                            <td class="sherah-table__column-7 text-center">
+                                <a href="{% url 'loyalty_customer_detail' profile.id %}" class="btn btn-sm" style="background: rgba(9, 173, 149, 0.1); color: #09ad95; border-radius: 6px;">
+                                    <i class="bi bi-pencil-square"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        {% empty %}
+                        <tr>
+                            <td colspan="6" class="text-center p-5">Mijoz topilmadi.</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

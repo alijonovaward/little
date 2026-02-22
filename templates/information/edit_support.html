@@ -1,0 +1,70 @@
+{% extends 'base.html' %} {% block content %} {% load static %}
+<form method="post" class="position-relative">
+  {% csrf_token %}
+  <button
+    type="button"
+    style="position: absolute; top: 4px; right: 2px; margin-right: 100px"
+    class="btn btn-danger"
+    onclick="goBack()"
+  >
+    Ortga
+  </button>
+  <div class="form-group">
+    <h3>
+      <label for="{{ form.support_center_uz.id_for_label }}"
+        >{{ form.support_center_uz.label_tag }}</label
+      >
+    </h3>
+    <div>{{ form.support_center_uz }}</div>
+  </div>
+  <br />
+
+  <div class="form-group">
+    <h3>
+      <label for="{{ form.support_center_ru.id_for_label }}"
+        >{{ form.support_center_ru.label_tag }}</label
+      >
+    </h3>
+    <div>{{ form.support_center_ru }}</div>
+  </div>
+  <br />
+
+  <div class="form-group">
+    <h3>
+      <label for="{{ form.support_center_en.id_for_label }}"
+        >{{ form.support_center_en.label_tag }}</label
+      >
+    </h3>
+    <div>{{ form.support_center_en }}</div>
+  </div>
+  <br />
+
+  <div class="form-group">
+    <h3>
+      <label for="{{ form.support_center_kr.id_for_label }}"
+        >{{ form.support_center_kr.label_tag }}</label
+      >
+    </h3>
+    <div>{{ form.support_center_kr }}</div>
+  </div>
+  <br />
+  <button type="submit" class="btn btn-primary" name="edit">Saqlash</button>
+</form>
+
+<!-- {# Load CKEditor script and stylesheet #} -->
+<script src="{% static 'ckeditor/ckeditor-init.js' %}"></script>
+<script src="{% static 'ckeditor/ckeditor/ckeditor.js' %}"></script>
+
+<script>
+  // Initialize CKEditor for each textarea
+  CKEDITOR.replaceAll("ckeditor");
+</script>
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+
+{% endblock %}

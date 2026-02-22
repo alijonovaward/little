@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="sherah-adashboard sherah-show">
+    <div class="container-fluid">
+        <div class="sherah-body">
+            <div class="sherah-breadcrumb mg-top-30">
+                <h2 class="sherah-breadcrumb__title">Kartani tahrirlash: {{ profile.full_name }}</h2>
+            </div>
+
+            <div class="row mg-top-30">
+                <div class="col-lg-6 col-12">
+                    <div class="card p-4 shadow-sm border-0">
+                        <form method="POST">
+                            {% csrf_token %}
+                            <div class="mb-3">
+                                <label class="form-label">Joriy Balans (₩)</label>
+                                <input type="number" name="balance" class="form-control" value="{{ card.current_balance|default:0 }}">
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Tsikl boshlanishi</label>
+                                    <input type="date" name="cycle_start" class="form-control" value="{{ card.cycle_start|date:'Y-m-d' }}">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Tsikl tugashi</label>
+                                    <input type="date" name="cycle_end" class="form-control" value="{{ card.cycle_end|date:'Y-m-d' }}">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Tsikl raqami</label>
+                                    <input type="number" name="cycle_number" class="form-control" value="{{ card.cycle_number|default:1 }}">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Tsikl kunlari</label>
+                                    <input type="number" name="cycle_days" class="form-control" value="{{ card.cycle_days|default:60 }}">
+                                </div>
+                            </div>
+
+                            <div class="d-flex gap-2 mg-top-20">
+                                <button type="submit" class="btn btn-success px-4">Saqlash</button>
+                                <a href="{% url 'loyalty_customer_detail' profile.id %}" class="btn btn-secondary px-4">Bekor qilish</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,469 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+    <title>Dashboard - Million halal market</title>
+    <meta content="" name="description"/>
+    <meta content="" name="keywords"/>
+
+    <!-- Favicons -->
+
+    <link href="{% static 'assets/img/favicon.png' %}" rel="icon"/>
+    <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon"/>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet"/>
+    <script type="text/javascript" src="{% static 'ckeditor/ckeditor-init.js' %}"></script>
+    <script type="text/javascript" src="{% static 'ckeditor/ckeditor/ckeditor.js' %}"></script>
+    <script src="https://kit.fontawesome.com/4f85f74c22.js" crossorigin="anonymous"></script>
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet"/>
+    <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet"/>
+    <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet"/>
+    <link href="{% static 'assets/vendor/quill/quill.snow.css' %}" rel="stylesheet"/>
+    <link href="{% static 'assets/vendor/quill/quill.bubble.css' %}" rel="stylesheet"/>
+    <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet"/>
+    <link href="{% static 'assets/vendor/simple-datatables/style.css' %}" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Template Main CSS File -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/font-awesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/charts.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/datatables.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/jvector-map.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slickslider.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/loyalty.css' %}">
+</head>
+
+<body>
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-between">
+        <a href="{% url 'dashboard' %}" class="logo d-flex align-items-center">
+            <img src="{% static 'assets/img/logo.png' %}" alt="#"/>
+            <span class="d-none d-lg-block">Million Mart</span>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div>
+    <!-- End Logo -->
+
+    <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+            <li class="nav-item d-block d-lg-none">
+                <a class="nav-link nav-icon search-bar-toggle" href="#"><i class="bi bi-search"></i></a>
+            </li>
+
+            <!-- End Messages Nav -->
+
+            <li class="nav-item dropdown pe-3">
+                <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                    <img src="{% static 'assets/img/admin-logo.jpg' %}" alt="Profile" class="rounded-circle"/>
+                    <span class="d-none d-md-block dropdown-toggle ps-2">ADMIN</span>
+                </a><!-- End Profile Iamge Icon -->
+
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                    <li class="dropdown-header">
+                        <h6>Million Admin</h6>
+                        <span>Halal mart</span>
+                    </li>
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center" href="{% url 'logout' %}">
+                            <i class="bi bi-box-arrow-right"></i>
+                            <span>Sign Out</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- End Profile Dropdown Items -->
+            </li>
+            <!-- End Profile Nav -->
+        </ul>
+    </nav>
+    <!-- End Icons Navigation -->
+</header>
+<!-- End Header -->
+{% url 'dashboard' as dashboard_url %}
+{% url 'phone_list' as phone_list_url %}
+{% url 'ticket-list' as ticket_list_url %}
+{% url 'good-list' as good_list_url %}
+{% url 'news-list' as news_list_url %}
+{% url 'users-list' as users_list_url %}
+{% url 'info-list' as info_list_url %}
+{% url 'service-list' as service_list_url %}
+<!-- ======= Sidebar ======= -->
+<aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+            <a class="nav-link {% if request.path == dashboard_url %}{% endif %}" href="{% url 'dashboard' %}">
+                <i class="bi bi-grid"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link {% if not 'dashboard/product' in request.path %}{% endif %}"
+               data-bs-target="#mahsulotlar-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-journal-text"></i><span style="color: #4154f1;">Mahsulotlar</span>
+                <i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="mahsulotlar-nav" class="nav-content {% if not 'dashboard/product' in request.path %}{% endif %}"
+                data-bs-parent="#sidebar-nav">
+                <!-- Mahsulotlar section content -->
+                <li>
+                    {% url 'category-list' as category_list %}
+                    <a class="{% if request.path == category_list %}{% endif %}" href="{% url 'category-list' %}"><i
+                            class="bi bi-circle"></i><span>Bosh kategoriyalar</span></a>
+                </li>
+                <li>
+                    {% url 'good-list' as good_list %}
+                    <a class="{% if request.path == good_list %}{% endif %}" href="{% url 'good-list' %}"><i
+                            class="bi bi-circle"></i><span>Oziq-ovqat mahsulotlari</span></a>
+                </li>
+                <li>
+                    {% url 'phone_list' as phone_list %}
+                    <a class="{% if request.path == phone_list %}{% endif %}" href="{% url 'phone_list' %}"><i
+                            class="bi bi-circle"></i><span>Mobil qurilmalar</span></a>
+                </li>
+
+                <li>
+                    {% url 'ticket-list' as ticket_list %}
+                    <a class="{% if request.path == ticket_list %}{% endif %}" href="{% url 'ticket-list' %}"><i
+                            class="bi bi-circle"></i><span>Chiptalar</span></a>
+                </li>
+            </ul>
+        </li>
+        <!-- End Forms Nav -->
+
+        <li class="nav-item">
+            {% url 'users-list' as users_list %}
+            <a class="nav-link {% if request.path == users_list %}{% endif %}" href="{% url 'users-list' %}">
+                <i class="bi bi-person"></i>
+                <span>Foydalanuvchilar</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            {% url 'all-orders-list' as orders_list %}
+            <a class="nav-link {% if request.path == orders_list %}{% endif %}" href="{% url 'all-orders-list' %}"><i
+                    class="bi bi-gem"></i><span>Buyurtmalar</span><i></i></a>
+        </li>
+        <!-- End Profile Page Nav -->
+
+        <li class="nav-item">
+            <a class="nav-link {% if not 'dashboard/news' in request.path %}{% endif %}"
+               data-bs-target="#qoshimchalar-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-question-circle"></i><span style="color: #4154f1;">Qo'shimchalar</span>
+                <i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="qoshimchalar-nav" class="nav-content collapse {% if 'dashboard/other' in request.path %}{% endif %}"
+                data-bs-parent="#sidebar-nav">
+                <!-- Qo'shimchalar section content -->
+                <li>
+                    {% url 'info-list' as info_list %}
+                    <a class="nav-link {% if request.path == info_list %}{% endif %}" href="{% url 'info-list' %}"><i
+                            class="bi bi-circle"></i><span>Ma'lumotnomalar</span></a>
+                </li>
+                <li>
+                    {% url 'service-list' as service_list %}
+                    <a class="{% if request.path == service_list %}{% endif %}" href="{% url 'service-list' %}"><i
+                            class="bi bi-circle"></i><span>Xizmatlar</span></a>
+                </li>
+                <li>
+                    {% url 'banner-list' as banner_list %}
+                    <a class="{% if request.path == banner_list %}{% endif %}" href="{% url 'banner-list' %}"><i
+                            class="bi bi-circle"></i><span>Bannerlar</span></a>
+                </li>
+                <li>
+                    {% url 'news-list' as news_list %}
+                    <a class="{% if request.path == news_list %}{% endif %}" href="{% url 'news-list' %}"><i
+                            class="bi bi-circle"></i><span>E'lonlar</span></a>
+                </li>
+                <li>
+                    {% url 'socialmedia' as socialmedia %}
+                    <a class="{% if request.path == socialmedia %}{% endif %}" href="{% url 'socialmedia' %}"><i
+                            class="bi bi-circle"></i><span>Ijtimoiy tarmoqlar</span></a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link {% if not 'loyalty' in request.path %}collapsed{% endif %}"
+               data-bs-target="#loyalty-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-card-checklist"></i><span style="color: #4154f1;">Sodiqlik Kartalari</span>
+                <i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="loyalty-nav" class="nav-content collapse {% if 'loyalty' in request.path %}show{% endif %}"
+                data-bs-parent="#sidebar-nav">
+
+                <li>
+                    {% url 'loyalty_customer_list' as customer_list_url %}
+                    <a href="{{ customer_list_url }}"
+                       class="{% if request.path == customer_list_url %}active{% endif %}">
+                        <i class="bi bi-circle"></i><span>Mijozlar balansi</span>
+                    </a>
+                </li>
+
+                <li>
+                    {% url 'all_pending_bonuses' as pending_url %}
+                    <a href="{{ pending_url }}" class="{% if request.path == pending_url %}active{% endif %}">
+                        <i class="bi bi-circle"></i><span>Kutilayotgan bonuslar</span>
+                    </a>
+                </li>
+
+                <li>
+                    {% url 'referral_list' as referral_url %}
+                    <a href="{{ referral_url }}" class="{% if request.path == referral_url %}active{% endif %}">
+                        <i class="bi bi-circle"></i><span>Referallar tizimi</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!--   <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-error-404.html">
+            <i class="bi bi-dash-circle"></i>
+            <span>Error 404</span>
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-blank.html">
+            <i class="bi bi-file-earmark"></i>
+            <span>Blank</span>
+          </a>
+        </li>   -->
+    </ul>
+</aside>
+<!-- End Sidebar -->
+
+<main id="main" class="main">
+    <div class="pagetitle">
+        <h1>Million halol market</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active">Admin panel</li>
+            </ol>
+        </nav>
+    </div>
+    <br/>
+    <!-- End Page Title -->
+
+    {% block content %}
+    <section class="section dashboard">
+        <div class="row">
+
+            <!-- 1. SHOSHILINCH HARAKATLAR PANELI -->
+            <div class="col-12">
+                <div class="row">
+                    <!-- Tasdiq kutayotgan buyurtmalar -->
+                    <div class="col-md-4">
+                        <div class="card info-card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">Tasdiq kutilmoqda</h5>
+                                <div class="d-flex align-items-center">
+                                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center bg-danger text-white">
+                                        <i class="bi bi- exclamation-octagon"></i>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6>{{ pending_orders }} ta</h6>
+                                        <span class="text-muted small">Yangi buyurtma</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chek yuklanganlar -->
+                    <div class="col-md-4">
+                        <div class="card info-card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">To'lovni tekshirish</h5>
+                                <div class="d-flex align-items-center">
+                                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center bg-primary text-white">
+                                        <i class="bi bi-cash-stack"></i>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6>{{ check_pending }} ta</h6>
+                                        <span class="text-muted small">Chek yuklangan</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bonuslar -->
+                    <div class="col-md-4">
+                        <div class="card info-card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning">Bonus so'rovlari</h5>
+                                <div class="d-flex align-items-center">
+                                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center bg-warning text-white">
+                                        <i class="bi bi-gift"></i>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6>{{ pending_bonuses }} ta</h6>
+                                        <span class="text-muted small">Kutilmoqda</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. ASOSIY STATISTIKA (Sizning eski kartlaringiz...) -->
+            <div class="col-lg-8">
+                <div class="row">
+                    <!-- Jami Daromad Card -->
+                    <div class="col-md-6">
+                        <div class="card info-card revenue-card">
+                            <div class="card-body">
+                                <h5 class="card-title">Umumiy Daromad</h5>
+                                <div class="d-flex align-items-center">
+                                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                        <i class="fas fa-won-sign"></i>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6>{{ total_revenue|floatformat:0 }} ₩</h6>
+                                        <span class="text-success small fw-bold">+{{ revenue_today|floatformat:0 }}</span>
+                                        <span class="text-muted small">Bugun</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Foydalanuvchilar Card -->
+                    <div class="col-md-6">
+                        <div class="card info-card customers-card">
+                            <div class="card-body">
+                                <h5 class="card-title">Foydalanuvchilar</h5>
+                                <div class="d-flex align-items-center">
+                                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-people"></i>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6>{{ customers }} ta</h6>
+                                        <span class="text-success small fw-bold">+{{ customers_today }}</span> <span
+                                            class="text-muted small">Yangi</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. SO'NGGI BUYURTMALAR JADVALI (Yangilangan status ranglari bilan) -->
+                    <div class="col-12">
+                        <div class="card recent-sales overflow-auto">
+                            <div class="card-body">
+                                <h5 class="card-title">So'nggi buyurtmalar</h5>
+                                <table class="table table-borderless datatable">
+                                    <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Foydalanuvchi</th>
+                                        <th>Sana</th>
+                                        <th>Summa</th>
+                                        <th>Holati</th>
+                                        <th>Amal</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    {% for c in recent %}
+                                    <tr>
+                                        <td>#{{ c.order_number }}</td>
+                                        <td>{{ c.user.full_name }}</td>
+                                        <td>{{ c.created_at|date:"d.m.Y H:i" }}</td>
+                                        <td>{{ c.total_amount }} ₩</td>
+                                        <td>
+                                            {% if c.status == 'pending' %}<span class="badge bg-danger">Tasdiq kutilmoqda</span>
+                                            {% elif c.status == 'check_pending' %}<span class="badge bg-primary">Chek tekshiruvi</span>
+                                            {% elif c.status == 'approved' %}<span
+                                                class="badge bg-success">Tasdiqlangan</span>
+                                            {% else %}<span class="badge bg-secondary">{{ c.status }}</span>{% endif %}
+                                        </td>
+                                        <td><a href="{% url 'user-order-detail' c.id %}"
+                                               class="btn btn-sm btn-outline-dark">Ko'rish</a></td>
+                                    </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. O'NG TOMON PANEL (OMBOR VA KOMMENTLAR) -->
+            <div class="col-lg-4">
+                <!-- Ombor qoldig'i -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Tugayotgan mahsulotlar ⚠️</h5>
+                        <ul class="list-group list-group-flush">
+                            {% for item in low_stock %}
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                {{ item.goods.name_uz|truncatechars:20 }}
+                                <span class="badge bg-danger rounded-pill">{{ item.available_quantity }} ta</span>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Kommentlar -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Yangi izohlar</h5>
+                        {% for c in comments %}
+                        <div class="news">
+                            <div class="post-item clearfix mb-3">
+                                <strong>{{ c.user.full_name }}</strong>: <span class="small text-muted">{{ c.comment|truncatechars:50 }}</span>
+                                <br><small>{{ c.created_at|date:"H:i" }} | <a href="{% url 'user-order-detail' c.id %}">Buyurtma
+                                #{{c.id}}</a></small>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    {% endblock %}
+</main>
+<!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer" class="footer">
+    <div class="copyright">
+        &copy; Copyright <strong><span>Million Halal Mart 2024</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits"></div>
+</footer>
+<!-- End Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="{% static 'assets/vendor/apexcharts/apexcharts.min.js' %}"></script>
+<script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'assets/vendor/chart.js/chart.umd.js' %}"></script>
+<script src="{% static 'assets/vendor/echarts/echarts.min.js' %}"></script>
+<script src="{% static 'assets/vendor/quill/quill.min.js' %}"></script>
+<script src="{% static 'assets/vendor/simple-datatables/simple-datatables.js' %}"></script>
+<script src="{% static 'assets/vendor/tinymce/tinymce.min.js' %}"></script>
+<script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+<!-- Template Main JS File -->
+<script src="{% static 'assets/js/main.js' %}"></script>
+</body>
+</html>

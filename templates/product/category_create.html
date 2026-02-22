@@ -1,0 +1,45 @@
+{% extends "base.html" %} {% block content %}
+<div class="container">
+  <h2>Mahsulot kategoriyasi yaratish oynasi</h2>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="row">
+
+      <!-- First Column -->
+      <div class="col-md-6">
+        <div class="mb-3">{{ form.name_uz.label_tag }} {{ form.name_uz }}</div>
+        <div class="mb-3">{{ form.name_ru.label_tag }} {{ form.name_ru }}</div>
+        <div class="mb-3">
+          <label for="id_images">Kategoriya rasmi:</label>{{ form.image }}
+        </div>
+      </div>
+      
+      <!-- Second Column -->
+      <div class="col-md-6">
+        <div class="mb-3">{{ form.name_kr.label_tag }} {{ form.name_kr }}</div>
+        <div class="mb-3">{{ form.name_en.label_tag }} {{ form.name_en }}</div>
+        <div class="mb-3">
+          {{ form.main_type.label_tag }}
+          {{ form.main_type }}
+      </div>
+      </div>
+      <div class="col-md-12">
+        <div class="mb-3">{{ form.active }} Active </div>
+      </div>
+    </div>
+    <!-- Single Column for Submit Button -->
+    <div class="row">
+      <div class="col-12 text-end">
+        <!-- text-end klassi qo'shildi -->
+        <button type="submit" class="btn btn-primary">Saqlash</button>
+        <button type="button" class="btn btn-danger" onclick="goBack()">Ortga</button>
+      </div>
+    </div>
+  </form>
+</div>
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
+{% endblock %}

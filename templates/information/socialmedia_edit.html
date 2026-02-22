@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form method="post">
+  <h1>Ijtimoiy tarmoqlarni tahrirlash oynasi</h1>
+  {% csrf_token %}
+
+  <div class="row">
+    <div class="col-md-6">
+      {{ form.telegram.label_tag }}
+      {{ form.telegram }}
+      <br>
+      {{ form.instagram.label_tag }}
+      {{ form.instagram }}
+      <br>
+      {{ form.whatsapp.label_tag }}
+      {{ form.whatsapp }}
+      <br>
+      {{ form.tiktok.label_tag }}
+      {{ form.tiktok }}
+    </div>
+
+    <div class="col-md-6">
+      {{ form.phone_number.label_tag }}
+      {{ form.phone_number }}
+      <br>
+      {{ form.imo.label_tag }}
+      {{ form.imo }}
+      <br>
+      {{ form.kakao.label_tag }}
+      {{ form.kakao }}
+    </div>
+  </div>
+
+  <style>
+    #id_delivery_fee {
+      width: 500px;
+    }
+  </style>
+  <br>
+  <button type="submit" class="btn btn-primary" name="edit">Saqlash</button>
+  <button type="button" class="btn btn-danger" onclick="goBack()">Ortga</button>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+<script>
+  document.getElementById('yourDeleteButtonId').addEventListener('click', function () {
+    $('#deleteConfirmModal').modal('show');
+  });
+</script>
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
+
+{% endblock %}

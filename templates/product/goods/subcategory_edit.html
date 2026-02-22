@@ -1,0 +1,49 @@
+{% extends 'base.html' %} {% block content %}
+<!-- Delete Confirmation Modal -->
+
+<!-- Existing form and content -->
+<form method="post" enctype="multipart/form-data">
+  <h1>Quyi kategoriyani tahrirlash oynasi</h1>
+  {% csrf_token %} {{ form.as_p }}
+  <button type="submit" class="btn btn-primary" name="edit">Saqlash</button>
+  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteConfirmModal" id="yourDeleteButtonId">
+    O'chirish
+</button>
+<button type="button" class="btn btn-secondary" onclick="goBack()">Ortga</button>
+</form>
+
+<div class="modal fade" id="deleteConfirmModal" tabindex="-1" role="dialog" aria-labelledby="deleteConfirmModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="deleteConfirmModalLabel">O'chirishni tasdiqlash</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Kategoriyani o'chirishni hohlaysizmi?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Bekor qilish</button>
+          <form method="post" action="{% url 'subcategory-delete' subcategory.id %}">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger">O'chirish</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+  <script>
+    document.getElementById('yourDeleteButtonId').addEventListener('click', function() {
+        $('#deleteConfirmModal').modal('show');
+    });
+    </script>
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
+{% endblock %}

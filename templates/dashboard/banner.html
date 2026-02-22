@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<!-- dashboard/banner.html -->
+<h1>Havola bannerlari</h1>
+<div class="container">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    {% if banners %}
+      {% for banner in banners %}
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="{{ banner.image.url }}" class="bd-placeholder-img card-img-top" width="100%" height="225" role="img" aria-label="Banner Image">
+            <div class="card-body">
+              <h5 class="card-title">{{ banner.title }}</h5>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <!-- Button to trigger the modal -->
+                  <button type="button" class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#deleteModal{{ banner.id }}">O'chirish</button>
+
+                  {% if banner.active %}
+                    <form method="post" action="{% url 'banner-action' banner.id %}">
+                      {% csrf_token %}
+                      <input type="hidden" name="action" value="toggle">
+                      <button type="submit" class="btn btn-sm btn-outline-secondary">Berkitish</button>
+                    </form>
+                  {% else %}
+                    <form method="post" action="{% url 'banner-action' banner.id %}">
+                      {% csrf_token %}
+                      <input type="hidden" name="action" value="toggle">
+                      <button type="submit" class="btn btn-sm btn-outline-success">Ko'rsatish</button>
+                    </form>
+                  {% endif %}
+                </div>
+                <small class="text-muted">{{ banner.created|date:"d-m-Y" }}</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="deleteModal{{ banner.id }}" tabindex="-1" aria-labelledby="deleteModalLabel{{ banner.id }}" aria-hidden="true">
+          <div class="modal-dialog modal-top">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel{{ banner.id }}">Tasdiqlash</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>"{{ banner.title }}" bannerni o'chirishni hohlaysizmi?</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bekor qilish</button>
+                <form method="post" action="{% url 'banner-action' banner.id %}">
+                  {% csrf_token %}
+                  <input type="hidden" name="action" value="delete">
+                  <button type="submit" class="btn btn-danger">Tasdiqlash</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    {% else %}
+      <p>Bannerlar mavjud emas</p>
+    {% endif %}
+  </div>
+  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#createBannerModal">Banner yaratish</button>
+
+  <!-- Modal for creating new banners -->
+  <div class="modal fade" id="createBannerModal" tabindex="-1" aria-labelledby="createBannerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="createBannerModalLabel">Yangi banner yaratish</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form method="post" enctype="multipart/form-data" action="{% url 'banner-list' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Saqlash</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bekor qilish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
